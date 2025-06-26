@@ -29,9 +29,9 @@ const terrains = [
   },
   {
     id: "campsas",
-    name: "Padel de Campsas",
+    name: "TENNIS PADEL AVENIR CAMPSANAIS",
     position: [43.89817203012283, 1.3185011967391125],
-    address: "28 Rue de la Mairie, 82370 Campsas",
+    address: "Rte d'Auch, 82370 Campsas",
     courts: 1,
     image:
       "https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg",

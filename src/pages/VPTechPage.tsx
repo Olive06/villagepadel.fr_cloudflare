@@ -606,8 +606,8 @@ const VPTechPage = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section id="contact" className="py-16 md:py-20 bg-gray-50">
+{/* Contact Form */}
+<section id="contact" className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contactez-nous</h2>
@@ -619,7 +619,39 @@ const VPTechPage = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <div className="p-8">
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target as HTMLFormElement);
+                  const name = formData.get('name');
+                  const email = formData.get('email');
+                  const phone = formData.get('phone');
+                  const club = formData.get('club');
+                  const message = formData.get('message');
+                  const consent = formData.get('consent');
+
+                  // Create email subject and body
+                  const subject = encodeURIComponent(`Demande de devis VP Tech - ${club || 'Club'}`);
+                  const body = encodeURIComponent(`Bonjour,
+
+Je souhaite obtenir plus d'informations sur VP Tech pour mon club de padel.
+
+Informations de contact :
+- Nom : ${name || 'Non renseigné'}
+- Email : ${email || 'Non renseigné'}
+- Téléphone : ${phone || 'Non renseigné'}
+- Club : ${club || 'Non renseigné'}
+
+Message :
+${message || 'Aucun message spécifique'}
+
+Consentement données : ${consent ? 'Accepté' : 'Non accepté'}
+
+Cordialement,
+${name || 'Prospect'}`);
+
+                  // Open email client with pre-filled data
+                  window.location.href = `mailto:contact@villagepadel.fr?subject=${subject}&body=${body}`;
+                }}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -631,6 +663,7 @@ const VPTechPage = () => {
                         name="name"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-orange focus:border-brand-orange"
                         placeholder="Votre nom"
+                        required
                       />
                     </div>
                     <div>
@@ -643,6 +676,7 @@ const VPTechPage = () => {
                         name="email"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-orange focus:border-brand-orange"
                         placeholder="votre@email.com"
+                        required
                       />
                     </div>
                   </div>
@@ -692,6 +726,7 @@ const VPTechPage = () => {
                       name="consent"
                       type="checkbox"
                       className="h-4 w-4 text-brand-orange focus:ring-brand-orange border-gray-300 rounded"
+                      required
                     />
                     <label htmlFor="consent" className="ml-2 block text-sm text-gray-600">
                       J'accepte que mes données soient utilisées pour me recontacter
