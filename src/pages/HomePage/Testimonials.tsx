@@ -6,7 +6,7 @@ const ResultsMetrics = () => {
   const metrics = [
     {
       icon: <Calendar className="h-10 w-10 text-brand-orange" />,
-      value: "20+",
+      value: "30+",
       label: "Réservations par semaine",
       description: "En moyenne par terrain automatisé"
     },

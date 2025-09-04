@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import PadelInfo from './pages/PadelInfo';
 import GrisollesPadel from './pages/GrisollesPadel';
 import CampsasPadel from './pages/CampsasPadel';
+import BaraquevillePadel from './pages/BaraquevillePadel';
 import NosPadels from './pages/NosPadels';
 import QuoteRequest from './pages/QuoteRequest';
 import ReservationConfirmation from './pages/ReservationConfirmation';
@@ -64,6 +65,7 @@ const App: React.FC = () => {
             <Route path="/padel-info" element={<PadelInfo />} />
             <Route path="/grisolles" element={<GrisollesPadel />} />
             <Route path="/campsas" element={<CampsasPadel />} />
+            <Route path="/baraqueville" element={<BaraquevillePadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
             <Route path="/application" element={<AppFeatures />} />
             <Route path="/cgu" element={<CGU />} />
@@ -71,7 +73,7 @@ const App: React.FC = () => {
             <Route path="/nos-padels" element={<NosPadels />} />
             <Route path="/vp-tech" element={<VPTechPage />} />
             <Route path="/ConfirmationReservation" element={<ReservationConfirmation />} />
-            <Route path="/redirect" element={<RedirectPage />} /> {/* Nouvelle route */}
+            <Route path="/redirect" element={<RedirectPage />} />
           </Routes>
         </main>
         <Footer />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import WeatherWidget_campsas from '../components/CampsasPadel/WeatherWidget_campsas';
-import CourtInfo_campsas from '../components/CampsasPadel/CourtInfo_campsas';
 import Features_campsas from '../components/CampsasPadel/Features_campsas';
 import BookingCTA_campsas from '../components/CampsasPadel/BookingCTA_campsas';
 import ImageCarousel from '../components/ImageCarousel';
@@ -27,19 +26,19 @@ const CampsasPadel = () => {
     <div className="min-h-screen bg-gray-50">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Padel à Campsas - Terrain de Padel Outdoor | Tennis Padel Avenir Campsanais</title>
+        <title>Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais</title>
         <meta
           name="description"
-          content="Terrain de padel outdoor à Campsas (82), près de Montauban. Ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
+          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
         />
         <meta
           name="keywords"
-          content="padel Campsas, padel Montauban, padel 82, Tennis Padel Avenir Campsanais, réservation padel, padel outdoor, Village Padel"
+          content="padel Campsas, padel autonome, padel Montauban, padel 82, Tennis Padel Avenir Campsanais, réservation padel, padel outdoor, Village Padel, accès automatisé"
         />
-        <meta property="og:title" content="Padel à Campsas - Terrain de Padel Outdoor | Tennis Padel Avenir Campsanais" />
+        <meta property="og:title" content="Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais" />
         <meta
           property="og:description"
-          content="Terrain de padel outdoor à Campsas (82), près de Montauban. Ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
+          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
         />
         <meta
           property="og:image"
@@ -48,10 +47,10 @@ const CampsasPadel = () => {
         <meta property="og:url" content="https://villagepadel.fr/campsas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Campsas - Terrain de Padel Outdoor | Tennis Padel Avenir Campsanais" />
+        <meta name="twitter:title" content="Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais" />
         <meta
           name="twitter:description"
-          content="Terrain de padel outdoor à Campsas (82), près de Montauban. Ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
+          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
         />
         <meta
           name="twitter:image"
@@ -66,8 +65,8 @@ const CampsasPadel = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
             Tennis Padel Avenir Campsanais
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Venez jouer au padel sur notre terrain outdoor à Campsas, accessible à tous.
+          <p className="text-xl text-center max-w-3xl mx-auto mb-4">
+            Terrain de padel 100% autonome à Campsas - Accès et matériel automatisés
           </p>
           <div className="flex justify-center mb-10">
             <button 
@@ -99,8 +98,8 @@ const CampsasPadel = () => {
               <span className="text-gray-700">7j/7 - 9h à 22h</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-brand-blue font-bold">Terrain</span>
-              <span className="text-gray-700">Outdoor</span>
+              <span className="block text-brand-blue font-bold">Accès</span>
+              <span className="text-gray-700">100% Autonome</span>
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Localisation</span>
@@ -114,12 +113,58 @@ const CampsasPadel = () => {
         </div>
       </div>
 
+
+
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Le Terrain de Padel à Campsas</h2>
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <CourtInfo_campsas />
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold mb-6">Caractéristiques du terrain</h3>
+            
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-500 text-2xl">☀️</div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Type de terrain</h4>
+                  <p className="text-gray-700">Outdoor (en plein air), situé dans un cadre agréable et accessible</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-500 text-2xl">⏰</div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Durée des créneaux</h4>
+                  <p className="text-gray-700">Réservez facilement pour une durée standard de 1h30</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-500 text-2xl">🔓</div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Accès autonome</h4>
+                  <p className="text-gray-700">Accès 100% automatisé via l'application Village Padel. Pas de clés à récupérer !</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-500 text-2xl">🎾</div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Matériel disponible</h4>
+                  <p className="text-gray-700">Raquettes et balles usagées disponibles directement sur le terrain. Ajoutez-les lors de votre réservation dans l'application</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-500 text-2xl">💰</div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Tarifs</h4>
+                  <ul className="text-gray-700">
+                    <li>• Tarif : 24€ pour 1h30</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -156,21 +201,40 @@ const CampsasPadel = () => {
                 En savoir plus sur le terrain
               </summary>
               <div className="prose prose-lg max-w-none mt-4 text-gray-700">
-                <h2>Terrain de Padel à Campsas</h2>
+                <h2>Terrain de Padel 100% Autonome à Campsas</h2>
                 <p>
-                  Le terrain de padel du <strong>Tennis Padel Avenir Campsanais</strong> est situé à Campsas, dans le Tarn-et-Garonne (82). Ouvert à tous, il est accessible <strong>7 jours sur 7 de 9h à 22h</strong> pour 24 € les 1h30.
+                  Le terrain de padel du <strong>Tennis Padel Avenir Campsanais</strong> est situé à Campsas, dans le Tarn-et-Garonne (82). <strong>Entièrement autonome</strong>, il est accessible <strong>7 jours sur 7 de 9h à 22h</strong> pour 24 € les 1h30, sans aucune contrainte horaire pour la récupération de clés !
                 </p>
-                <h3>Accès simple et pratique</h3>
+                
+                <h3>🔓 Accès 100% automatisé</h3>
                 <p>
-                  Réservez facilement via l’application <strong>Village Padel</strong> (disponible sur iOS et Android). Le terrain est équipé d’un système d’accès automatisé et d’un éclairage pour jouer en soirée.
+                  Fini les rendez-vous pour récupérer des clés ! Réservez via l'application <strong>Village Padel</strong> (disponible sur iOS et Android) et ouvrez directement le terrain avec votre smartphone. Le terrain est équipé d'un système d'accès entièrement automatisé et d'un éclairage pour jouer en soirée.
                 </p>
+
+                <h3>🎾 Matériel autonome inclus</h3>
                 <p>
-                  Notre terrain de padel à Campsas est à seulement 15 minutes de Montauban, dans le Tarn-et-Garonne (82). Proche de Montauban et Toulouse, c’est l’endroit parfait pour jouer au padel, que vous soyez débutant ou expérimenté.
+                  Besoin de raquettes ou de balles ? Pas de problème ! Des <strong>raquettes et balles usagées sont mises à disposition</strong> dans un casier connecté. Vous pouvez les ajouter à votre réservation via l'application Village Padel lors de votre réservation - tout est géré automatiquement !
                 </p>
+
+                <h3>📍 Localisation pratique</h3>
+                <p>
+                  Notre terrain de padel à Campsas est à seulement 15 minutes de Montauban, dans le Tarn-et-Garonne (82). Proche de Montauban et Toulouse, c'est l'endroit parfait pour jouer au padel en toute autonomie, que vous soyez débutant ou expérimenté.
+                </p>
+                
                 <h3>À propos du terrain</h3>
                 <p>
-                  Ce terrain outdoor offre un gazon synthétique confortable et un parking gratuit à proximité. Venez profiter d’une partie de padel dans un cadre agréable et convivial !
+                  Ce terrain outdoor offre un gazon synthétique confortable et un parking gratuit à proximité. Venez profiter d'une partie de padel dans un cadre agréable et convivial, en toute autonomie !
                 </p>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-6">
+                  <h4 className="font-semibold text-brand-blue mb-2">💡 Comment ça marche ?</h4>
+                  <ol className="list-decimal list-inside space-y-1 text-sm">
+                    <li>Téléchargez l'app Village Padel</li>
+                    <li>Réservez votre créneau (+ matériel si besoin)</li>
+                    <li>Arrivez au terrain à l'heure de votre réservation</li>
+                    <li>Ouvrez avec votre smartphone - c'est tout !</li>
+                  </ol>
+                </div>
               </div>
             </details>
           </div>
@@ -182,8 +246,8 @@ const CampsasPadel = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel - Tennis Padel Avenir Campsanais",
-          "description": "Terrain de padel outdoor à Campsas (82), ouvert 7j/7 de 9h à 22h, 24€ pour 1h30",
+          "name": "Terrain de Padel 100% Autonome - Tennis Padel Avenir Campsanais",
+          "description": "Terrain de padel 100% autonome à Campsas (82), accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Campsas",
@@ -200,7 +264,21 @@ const CampsasPadel = () => {
           "telephone": "+33749157401",
           "url": "https://villagepadel.fr/campsas",
           "image": "https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg",
-          "priceRange": "24€ pour 1h30"
+          "priceRange": "24€ pour 1h30",
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Accès autonome automatisé"
+            },
+            {
+              "@type": "LocationFeatureSpecification", 
+              "name": "Matériel disponible via application"
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Terrain outdoor éclairé"
+            }
+          ]
         })}
       </script>
     </div>
