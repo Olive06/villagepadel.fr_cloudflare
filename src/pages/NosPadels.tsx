@@ -37,6 +37,24 @@ const terrains = [
       "https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg",
     link: "/campsas",
   },
+  {
+    id: "baraqueville",
+    name: "Tennis Padel Club de Baraqueville",
+    position: [44.2751913, 2.4349727],
+    address: "Rue de la Vall. du Viaur, 12160 Baraqueville",
+    courts: 1,
+    image: "https://olive06.github.io/villagepadel.fr/images/baraq1.jpg",
+    link: "/baraqueville",
+  },
+  {
+    id: "port-la-nouvelle",
+    name: "TC Nouvellois - Port-La Nouvelle",
+    position: [43.0146315, 3.0509743],
+    address: "11210 Port-La Nouvelle",
+    courts: 2,
+    image: "https://olive06.github.io/villagepadel.fr/images/port1.png",
+    link: "/port-la-nouvelle",
+  },
 ];
 
 const NosPadels = () => {
@@ -87,7 +105,7 @@ const NosPadels = () => {
 
       {/* 🗺️ Carte interactive */}
       <div className="lg:w-2/3 w-full flex-grow h-full">
-        <MapContainer center={[43.85, 1.35]} zoom={10} className="h-full w-full">
+        <MapContainer center={[43.5, 2.2]} zoom={8} className="h-full w-full">
           {/* 🌍 Fond de carte stylisé */}
           <TileLayer
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"

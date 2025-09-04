@@ -3,67 +3,67 @@ import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
 import ImageCarousel from '../components/ImageCarousel';
 
-const BaraquevilleImages = [
+const PortLaNouvelleImages = [
   {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq1.jpg",
-    alt: "Terrain de padel à Baraqueville au Tennis Padel Club de Baraqueville"
+    url: "https://olive06.github.io/villagepadel.fr/images/port1.png",
+    alt: "Terrain de padel à Port-La Nouvelle au TC Nouvellois"
   },
   {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq2.jpg",
-    alt: "Vue du terrain de padel à Baraqueville avec casier matériel"
+    url: "https://olive06.github.io/villagepadel.fr/images/port2.png",
+    alt: "Vue des terrains de padel à Port-La Nouvelle"
   },
   {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq3.jpg",
-    alt: "Tennis Padel Club de Baraqueville - Installation complète"
+    url: "https://olive06.github.io/villagepadel.fr/images/port3.png",
+    alt: "TC Nouvellois Port-La Nouvelle - Installation complète"
   }
 ];
 
-const BaraquevillePadel: React.FC = () => {
+const PortLaNouvellePadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville</title>
+        <title>Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois</title>
         <meta
           name="description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
+          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
         />
         <meta
           name="keywords"
-          content="padel Baraqueville, padel Aveyron, padel 12, Tennis Padel Club de Baraqueville, réservation padel, padel autonome, casier matériel, Village Padel"
+          content="padel Port-La Nouvelle, padel Aude, padel 11, TC Nouvellois, réservation padel, padel autonome, matériel padel, Village Padel"
         />
-        <meta property="og:title" content="Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville" />
+        <meta property="og:title" content="Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois" />
         <meta
           property="og:description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
+          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
         />
         <meta
           property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/baraq1.jpg"
+          content="https://olive06.github.io/villagepadel.fr/images/port1.png"
         />
-        <meta property="og:url" content="https://villagepadel.fr/baraqueville" />
+        <meta property="og:url" content="https://villagepadel.fr/port-la-nouvelle" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville" />
+        <meta name="twitter:title" content="Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois" />
         <meta
           name="twitter:description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
+          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
         />
         <meta
           name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/baraq1.jpg"
+          content="https://olive06.github.io/villagepadel.fr/images/port1.png"
         />
-        <link rel="canonical" href="https://villagepadel.fr/baraqueville" />
+        <link rel="canonical" href="https://villagepadel.fr/port-la-nouvelle" />
       </Helmet>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
-            Tennis Padel Club de Baraqueville
+            TC Nouvellois - Port-La Nouvelle
           </h1>
           <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Terrain de padel 100% autonome en Aveyron - Accès et matériel automatisés
+            2 terrains de padel 100% autonomes dans l'Aude - Accès et matériel automatisés
           </p>
           <div className="flex justify-center mb-10">
             <button 
@@ -82,7 +82,7 @@ const BaraquevillePadel: React.FC = () => {
               Réserver un terrain
             </button>
           </div>
-          <ImageCarousel images={BaraquevilleImages} />
+          <ImageCarousel images={PortLaNouvelleImages} />
         </div>
       </div>
 
@@ -91,11 +91,11 @@ const BaraquevillePadel: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-around items-center text-center">
             <div className="px-4 py-2">
-              <span className="block text-brand-blue font-bold">Prix Jour</span>
-              <span className="text-gray-700">20€ / 1h30</span>
+              <span className="block text-brand-blue font-bold">Terrains</span>
+              <span className="text-gray-700">2 terrains</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-brand-blue font-bold">Prix Soirée</span>
+              <span className="block text-brand-blue font-bold">Prix</span>
               <span className="text-gray-700">24€ / 1h30</span>
             </div>
             <div className="px-4 py-2">
@@ -104,7 +104,7 @@ const BaraquevillePadel: React.FC = () => {
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Matériel</span>
-              <span className="text-gray-700">Casier 4€</span>
+              <span className="text-gray-700">Disponible</span>
             </div>
           </div>
         </div>
@@ -115,16 +115,16 @@ const BaraquevillePadel: React.FC = () => {
         
         {/* Court Information Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Le Terrain de Padel à Baraqueville</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Les Terrains de Padel à Port-La Nouvelle</h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold mb-6">Caractéristiques du terrain</h3>
+            <h3 className="text-2xl font-bold mb-6">Caractéristiques des terrains</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="text-orange-500 text-2xl">☀️</div>
+                <div className="text-orange-500 text-2xl">🏟️</div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-2">Type de terrain</h4>
-                  <p className="text-gray-700">Outdoor (en plein air), situé dans un cadre agréable en Aveyron</p>
+                  <h4 className="font-semibold text-lg mb-2">Nombre de terrains</h4>
+                  <p className="text-gray-700">2 terrains de padel modernes et bien entretenus</p>
                 </div>
               </div>
               
@@ -147,8 +147,8 @@ const BaraquevillePadel: React.FC = () => {
               <div className="flex items-start space-x-4">
                 <div className="text-orange-500 text-2xl">🎾</div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-2">Casier matériel - 4€</h4>
-                  <p className="text-gray-700">Raquettes et balles usagées dans un casier sécurisé. Ajoutez l'option lors de votre réservation</p>
+                  <h4 className="font-semibold text-lg mb-2">Matériel disponible</h4>
+                  <p className="text-gray-700">Raquettes et balles à disposition via l'application. Réservez le matériel en même temps que votre terrain</p>
                 </div>
               </div>
               
@@ -157,9 +157,8 @@ const BaraquevillePadel: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Tarifs</h4>
                   <ul className="text-gray-700">
-                    <li>• Journée : 20€ pour 1h30</li>
-                    <li>• Soirée : 24€ pour 1h30</li>
-                    <li>• Casier matériel : +4€</li>
+                    <li>• 24€ pour 1h30 de jeu</li>
+                    <li>• Matériel disponible via l'app</li>
                   </ul>
                 </div>
               </div>
@@ -171,7 +170,7 @@ const BaraquevillePadel: React.FC = () => {
         <section className="mb-16">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              Pourquoi choisir le Padel de Baraqueville ?
+              Pourquoi choisir le Padel de Port-La Nouvelle ?
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -179,16 +178,16 @@ const BaraquevillePadel: React.FC = () => {
                 <div className="mb-4">
                   <MapPin className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Localisation parfaite</h3>
-                <p className="text-gray-600">Situé au cœur de l'Aveyron, facile d'accès depuis Rodez et Villefranche-de-Rouergue</p>
+                <h3 className="font-bold text-lg mb-2">Localisation côtière</h3>
+                <p className="text-gray-600">Situé à Port-La Nouvelle dans l'Aude, proche de la Méditerranée</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="mb-4">
                   <Users className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Club historique FFT</h3>
-                <p className="text-gray-600">Plus de 80 licenciés dans un club reconnu, ambiance conviviale garantie</p>
+                <h3 className="font-bold text-lg mb-2">TC Nouvellois</h3>
+                <p className="text-gray-600">Club de tennis reconnu avec des installations modernes de qualité</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
@@ -203,8 +202,8 @@ const BaraquevillePadel: React.FC = () => {
                 <div className="mb-4">
                   <Award className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Tarifs compétitifs</h3>
-                <p className="text-gray-600">20€ en journée, 24€ en soirée + casier matériel à seulement 4€</p>
+                <h3 className="font-bold text-lg mb-2">2 terrains disponibles</h3>
+                <p className="text-gray-600">Plus de créneaux disponibles avec nos deux terrains modernes</p>
               </div>
             </div>
           </div>
@@ -215,21 +214,21 @@ const BaraquevillePadel: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Où nous trouver</h3>
             
-            {/* Simple Google Maps Embed like Campsas */}
+            {/* Simple Google Maps Embed */}
             <div className="py-12">
               <div className="container mx-auto px-4">
-                <h2 className="text-2xl font-bold mb-6 text-center">Localisation du Padel de Baraqueville</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">Localisation du Padel de Port-La Nouvelle</h2>
                 <div className="flex justify-center">
                   <div className="w-full max-w-4xl">
                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1437.9!2d2.4349727!3d44.2751913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b27dd088b942e7%3A0x274b1f7bbbe9154c!2sTennis%20Club%20Padel%20Baraqueville!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1086.9!2d3.0509743!3d43.0146315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b0572afe8dbc13%3A0x616b55a1b8669c23!2sPadel%20de%20Port-La%20Nouvelle!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
                         className="absolute top-0 left-0 w-full h-full"
                         style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Localisation du Padel de Baraqueville"
+                        title="Localisation du Padel de Port-La Nouvelle"
                       ></iframe>
                     </div>
                   </div>
@@ -239,9 +238,8 @@ const BaraquevillePadel: React.FC = () => {
             
             {/* Contact Information */}
             <div className="text-gray-700 space-y-2">
-              <p><strong>Adresse :</strong> Tennis Club Padel Baraqueville, Rue de la Vall. du Viaur, 12160 Baraqueville, France</p>
-              <p><strong>Téléphone :</strong> 06 84 19 71 98</p>
-              <p><strong>Email :</strong> tcbaraqueville@fft.fr</p>
+              <p><strong>Adresse :</strong> Padel de Port-La Nouvelle, 11210 Port-La Nouvelle, France</p>
+              <p><strong>Club :</strong> TC Nouvellois</p>
             </div>
           </div>
         </div>
@@ -286,71 +284,71 @@ const BaraquevillePadel: React.FC = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             <details className="bg-gray-50 rounded-xl shadow-md p-6">
               <summary className="cursor-pointer text-xl font-semibold text-brand-blue mb-4">
-                En savoir plus sur le terrain
+                En savoir plus sur les terrains
               </summary>
               <div className="prose prose-lg max-w-none mt-4 text-gray-700">
-                <h2>Terrain de Padel 100% Autonome à Baraqueville</h2>
+                <h2>Terrains de Padel 100% Autonomes à Port-La Nouvelle</h2>
                 <p>
-                  Le terrain de padel du <strong>Tennis Padel Club de Baraqueville</strong> est situé à Baraqueville, dans l'Aveyron (12). <strong>Entièrement autonome</strong>, il propose des tarifs compétitifs : <strong>20€ en journée et 24€ en soirée</strong> pour 1h30 de jeu, avec un système d'accès révolutionnaire !
+                  Les terrains de padel du <strong>TC Nouvellois</strong> sont situés à Port-La Nouvelle, dans l'Aude (11). <strong>Entièrement autonomes</strong>, ils offrent une expérience de jeu moderne avec <strong>24€ pour 1h30</strong>, accessible à tous via un système d'accès révolutionnaire !
                 </p>
                 
                 <h3>Accès 100% automatisé</h3>
                 <p>
-                  Plus besoin de rendez-vous ! Réservez via l'application <strong>Village Padel</strong> (disponible sur iOS et Android) et ouvrez directement le terrain avec votre smartphone. Le terrain est équipé d'un système d'accès entièrement automatisé et d'un éclairage LED pour jouer en soirée.
+                  Plus besoin de rendez-vous ! Réservez via l'application <strong>Village Padel</strong> (disponible sur iOS et Android) et ouvrez directement les terrains avec votre smartphone. Les installations sont équipées d'un système d'accès entièrement automatisé pour jouer en toute liberté.
                 </p>
 
-                <h3>Casier à matériel sécurisé - 4€ seulement</h3>
+                <h3>Matériel disponible via l'app</h3>
                 <p>
-                  Le <strong>Tennis Padel Club de Baraqueville</strong> met à votre disposition un <strong>casier à matériel sécurisé pour seulement 4€</strong>, contenant des raquettes et balles usagées de qualité. Ajoutez simplement cette option lors de votre réservation via l'application - le casier se déverrouille automatiquement !
+                  Le <strong>TC Nouvellois</strong> met à votre disposition du <strong>matériel de qualité</strong> : raquettes et balles disponibles directement via l'application Village Padel. Réservez votre matériel en même temps que votre terrain - tout est géré automatiquement !
                 </p>
 
-                <h3>Tarification adaptée jour/soirée</h3>
+                <h3>2 terrains modernes</h3>
                 <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold text-brand-blue mb-2">Nos tarifs :</h4>
+                  <h4 className="font-semibold text-brand-blue mb-2">Nos installations :</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li><strong>20€ pour 1h30 en journée</strong> - Parfait pour jouer avec la lumière naturelle</li>
-                    <li><strong>24€ pour 1h30 en soirée</strong> - Éclairage LED professionnel inclus</li>
-                    <li><strong>Casier matériel : +4€</strong> - Raquettes + balles de qualité</li>
+                    <li><strong>2 terrains de padel</strong> - Plus de créneaux disponibles</li>
+                    <li><strong>24€ pour 1h30</strong> - Tarif unique et transparent</li>
+                    <li><strong>Matériel via l'app</strong> - Raquettes et balles de qualité</li>
                   </ul>
                 </div>
 
-                <h3>Au cœur de l'Aveyron</h3>
+                <h3>Port-La Nouvelle, Aude</h3>
                 <p>
-                  Notre terrain de padel à Baraqueville est idéalement situé dans l'Aveyron (12), facilement accessible depuis Rodez, Villefranche-de-Rouergue et les communes environnantes. Le club dispose de 4 courts de tennis (2 extérieurs, 2 couverts) et maintenant d'un terrain de padel moderne.
+                  Nos terrains de padel à Port-La Nouvelle sont idéalement situés dans l'Aude (11), proche de la côte méditerranéenne. Le TC Nouvellois offre des installations modernes dans un cadre agréable, parfait pour jouer au padel toute l'année.
                 </p>
                 
-                <h3>Un club reconnu FFT</h3>
+                <h3>TC Nouvellois - Club de référence</h3>
                 <p>
-                  Le <strong>Tennis Padel Club de Baraqueville</strong> est un club affilié FFT avec plus de 80 licenciés et une équipe dynamique. Le terrain de padel vient enrichir l'offre sportive existante dans un cadre convivial et professionnel.
+                  Le <strong>TC Nouvellois</strong> est un club reconnu qui propose maintenant des terrains de padel modernes et entièrement automatisés. Une expérience de jeu optimale dans un environnement professionnel et convivial.
                 </p>
 
                 <div className="bg-green-50 p-4 rounded-lg mt-6">
                   <h4 className="font-semibold text-green-700 mb-2">Comment ça marche ?</h4>
                   <ol className="list-decimal list-inside space-y-1 text-sm text-green-800">
                     <li>Téléchargez l'app Village Padel</li>
-                    <li>Sélectionnez votre créneau (jour/soirée)</li>
-                    <li>Ajoutez le casier matériel si besoin (+4€)</li>
+                    <li>Sélectionnez votre terrain et créneau</li>
+                    <li>Ajoutez le matériel si besoin</li>
                     <li>Payez en ligne de façon sécurisée</li>
                     <li>Arrivez au terrain et ouvrez avec votre smartphone</li>
-                    <li>Le casier matériel se déverrouille automatiquement si commandé</li>
+                    <li>Récupérez le matériel si commandé et jouez !</li>
                   </ol>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg mt-4">
-                  <h4 className="font-semibold text-yellow-700 mb-2">Pourquoi choisir Baraqueville ?</h4>
+                  <h4 className="font-semibold text-yellow-700 mb-2">Pourquoi choisir Port-La Nouvelle ?</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm text-yellow-800">
-                    <li><strong>Tarifs les plus compétitifs de la région</strong> - 20€ en journée !</li>
+                    <li><strong>2 terrains disponibles</strong> - Plus de flexibilité pour vos réservations</li>
                     <li><strong>Système 100% autonome</strong> - Aucune contrainte horaire</li>
-                    <li><strong>Casier matériel économique</strong> - Seulement 4€ avec raquettes et balles</li>
-                    <li><strong>Club historique FFT</strong> - Plus de 80 licenciés</li>
-                    <li><strong>Cadre exceptionnel</strong> - Au cœur de l'Aveyron</li>
-                    <li><strong>Éclairage LED professionnel</strong> - Jouez jusqu'à tard le soir</li>
+                    <li><strong>Matériel via l'app</strong> - Simplicité et qualité</li>
+                    <li><strong>Localisation côtière</strong> - Cadre exceptionnel dans l'Aude</li>
+                    <li><strong>Club établi</strong> - TC Nouvellois, référence locale</li>
+                    <li><strong>Tarif transparent</strong> - 24€ pour 1h30, simple et clair</li>
                   </ul>
                 </div>
 
-                <h3>Accès et stationnement</h3>
+                <h3>Accès et commodités</h3>
                 <p>
-                  Le terrain est situé Rue de la Vall. du Viaur à Baraqueville, avec un <strong>parking gratuit</strong> à disposition. Accessible facilement depuis la route départementale, à proximité des installations sportives de la commune.
+                  Les terrains sont situés à Port-La Nouvelle dans l'Aude, facilement accessibles avec <strong>stationnement à proximité</strong>. Profitez d'installations modernes dans un cadre agréable proche de la Méditerranée.
                 </p>
               </div>
             </details>
@@ -363,26 +361,23 @@ const BaraquevillePadel: React.FC = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel 100% Autonome - Tennis Padel Club de Baraqueville",
-          "description": "Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Accès automatisé via smartphone.",
+          "name": "Terrains de Padel 100% Autonomes - TC Nouvellois Port-La Nouvelle",
+          "description": "2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. Accès automatisé via smartphone.",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Baraqueville",
-            "addressRegion": "Aveyron",
-            "postalCode": "12160",
-            "addressCountry": "FR",
-            "streetAddress": "Rue de la Vall. du Viaur"
+            "addressLocality": "Port-La Nouvelle",
+            "addressRegion": "Aude",
+            "postalCode": "11210",
+            "addressCountry": "FR"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "44.2751913",
-            "longitude": "2.4349727"
+            "latitude": "43.0146315",
+            "longitude": "3.0509743"
           },
-          "telephone": "+33684197198",
-          "email": "tcbaraqueville@fft.fr",
-          "url": "https://villagepadel.fr/baraqueville",
-          "image": "https://olive06.github.io/villagepadel.fr/images/baraq1.jpg",
-          "priceRange": "20€ jour / 24€ soirée pour 1h30",
+          "url": "https://villagepadel.fr/port-la-nouvelle",
+          "image": "https://olive06.github.io/villagepadel.fr/images/port1.png",
+          "priceRange": "24€ pour 1h30",
           "amenityFeature": [
             {
               "@type": "LocationFeatureSpecification",
@@ -390,26 +385,20 @@ const BaraquevillePadel: React.FC = () => {
             },
             {
               "@type": "LocationFeatureSpecification", 
-              "name": "Casier matériel sécurisé 4€"
+              "name": "Matériel disponible via application"
             },
             {
               "@type": "LocationFeatureSpecification",
-              "name": "Terrain outdoor avec éclairage LED"
+              "name": "2 terrains de padel"
             },
             {
               "@type": "LocationFeatureSpecification",
-              "name": "Tarifs jour/soirée différenciés"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Parking gratuit"
+              "name": "Stationnement disponible"
             }
           ],
           "parentOrganization": {
             "@type": "SportsOrganization",
-            "name": "Tennis Padel Club de Baraqueville",
-            "foundingDate": "1980",
-            "memberOf": "Fédération Française de Tennis"
+            "name": "TC Nouvellois"
           }
         })}
       </script>
@@ -417,4 +406,4 @@ const BaraquevillePadel: React.FC = () => {
   );
 };
 
-export default BaraquevillePadel;
+export default PortLaNouvellePadel;

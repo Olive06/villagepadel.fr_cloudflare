@@ -13,7 +13,7 @@ const routes = [
   '/vp-tech',
   '/grisolles',
   '/campsas',
-  // Add more routes as needed
+  '/baraqueville'
 ];
 
 // Generate sitemap XML content

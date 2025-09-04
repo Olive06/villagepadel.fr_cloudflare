@@ -6,7 +6,9 @@ const path = require('path');
 const routes = [
   'vp-tech',
   'grisolles',
-  'campsas'
+  'campsas',
+  'baraqueville',
+  'port-la-nouvelle'
 ];
 
 // Base directory

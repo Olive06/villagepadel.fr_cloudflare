@@ -7,6 +7,7 @@ import PadelInfo from './pages/PadelInfo';
 import GrisollesPadel from './pages/GrisollesPadel';
 import CampsasPadel from './pages/CampsasPadel';
 import BaraquevillePadel from './pages/BaraquevillePadel';
+import PortLaNouvellePadel from './pages/PortLaNouvellePadel';
 import NosPadels from './pages/NosPadels';
 import QuoteRequest from './pages/QuoteRequest';
 import ReservationConfirmation from './pages/ReservationConfirmation';
@@ -16,7 +17,7 @@ import CGV from './pages/CGV';
 import Footer from './components/Footer';
 import PromoBar from './components/PromoBar';
 import VPTechPage from './pages/VPTechPage';
-import RedirectPage from './pages/RedirectPage'; // Ajouté
+import RedirectPage from './pages/RedirectPage';
 
 // Composant ScrollToTop
 const ScrollToTop = () => {
@@ -66,6 +67,7 @@ const App: React.FC = () => {
             <Route path="/grisolles" element={<GrisollesPadel />} />
             <Route path="/campsas" element={<CampsasPadel />} />
             <Route path="/baraqueville" element={<BaraquevillePadel />} />
+            <Route path="/port-la-nouvelle" element={<PortLaNouvellePadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
             <Route path="/application" element={<AppFeatures />} />
             <Route path="/cgu" element={<CGU />} />
