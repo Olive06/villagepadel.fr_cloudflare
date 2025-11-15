@@ -18,8 +18,10 @@ import Footer from './components/Footer';
 import PromoBar from './components/PromoBar';
 import VPTechPage from './pages/VPTechPage';
 import RedirectPage from './pages/RedirectPage';
+import ChisPadel from './pages/ChisPadel';
+import ArenaBooking from './pages/ArenaBooking';
 
-// Composant ScrollToTop
+// ScrollToTop
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
@@ -68,6 +70,7 @@ const App: React.FC = () => {
             <Route path="/campsas" element={<CampsasPadel />} />
             <Route path="/baraqueville" element={<BaraquevillePadel />} />
             <Route path="/port-la-nouvelle" element={<PortLaNouvellePadel />} />
+            <Route path="/chis" element={<ChisPadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
             <Route path="/application" element={<AppFeatures />} />
             <Route path="/cgu" element={<CGU />} />
@@ -76,6 +79,8 @@ const App: React.FC = () => {
             <Route path="/vp-tech" element={<VPTechPage />} />
             <Route path="/ConfirmationReservation" element={<ReservationConfirmation />} />
             <Route path="/redirect" element={<RedirectPage />} />
+            <Route path="/arena/:bookingId" element={<ArenaBooking />} />
+            <Route path="*" element={<HomePage />} />  {/* ← 404 FALLBACK */}
           </Routes>
         </main>
         <Footer />

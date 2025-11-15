@@ -55,6 +55,15 @@ const terrains = [
     image: "https://olive06.github.io/villagepadel.fr/images/port1.png",
     link: "/port-la-nouvelle",
   },
+  {
+    id: "chis",
+    name: "Tennis Club Pyrénées Bigorre",
+    position: [43.293837, 0.111647],
+    address: "3 Chem. de Saint-Ferréol, 65800 Chis",
+    courts: 1,
+    image: "https://olive06.github.io/villagepadel.fr/images/bigorre.jpg",
+    link: "/chis",
+  },
 ];
 
 const NosPadels = () => {

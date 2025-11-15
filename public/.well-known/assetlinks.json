@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.villagePadel",
+    "sha256_cert_fingerprints": ["74:00:0A:20:0F:6E:4D:F9:D1:2C:A8:E2:83:53:0F:0B:25:D5:74:3E:B3:72:F9:4F:1D:F7:CB:35:F4:AF:7C:80"]
+  }
+}]
