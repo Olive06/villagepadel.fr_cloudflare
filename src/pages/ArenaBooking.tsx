@@ -8,7 +8,6 @@ const ArenaBooking: React.FC = () => {
   useEffect(() => {
     const deepLink = `villagepadel://arena/${bookingId}`;
     const androidIntent = `intent://arena/${bookingId}#Intent;scheme=villagepadel;package=com.villagePadel;end`;
-    const iosUniversal = `https://villagepadel.fr/arena/${bookingId}`; // Universal Link
 
     let hasOpenedApp = false;
     let timer: NodeJS.Timeout;
@@ -19,31 +18,29 @@ const ArenaBooking: React.FC = () => {
       const isIOS = /iphone|ipad|ipod/i.test(userAgent);
 
       if (isAndroid) {
-        // Method 1: Try intent (most reliable)
         window.location.href = androidIntent;
 
-        // Method 2: Fallback to custom scheme
         setTimeout(() => {
           if (!hasOpenedApp) {
             window.location.href = deepLink;
           }
         }, 500);
       } else if (isIOS) {
-        // iOS: Use Universal Link (requires apple-app-site-association)
-        window.location.href = iosUniversal;
+        // Fallback to custom scheme if Universal Link fails
+        setTimeout(() => {
+          if (!document.hidden) {
+            window.location.href = deepLink;
+          }
+        }, 1500);
       } else {
         window.location.href = deepLink;
       }
 
-      // Show store after delay
-      timer = setTimeout(() => {
-        setShowFallback(true);
-      }, 2000);
+      timer = setTimeout(() => setShowFallback(true), 2500);
     };
 
     openApp();
 
-    // Detect if app opened (blur = app opened)
     const handleBlur = () => {
       hasOpenedApp = true;
       clearTimeout(timer);
