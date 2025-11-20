@@ -209,7 +209,7 @@ const CapvernPadel: React.FC = () => {
                   <div className="w-full max-w-4xl">
                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.5!2d0.314!3d43.1019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDA2JzA2LjgiTiAwwrAxOCc1MC40IkU!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.5!2d0.329371!3d43.097394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDA1JzUwLjYiTiAwwrAxOSc0NS43IkU!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
                         className="absolute top-0 left-0 w-full h-full"
                         style={{ border: 0 }}
                         allowFullScreen
@@ -353,8 +353,8 @@ const CapvernPadel: React.FC = () => {
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "43.1019",
-            "longitude": "0.314"
+            "latitude": "43.097394",
+            "longitude": "0.329371"
           },
           "url": "https://villagepadel.fr/capvern",
           "image": "https://olive06.github.io/villagepadel.fr/images/capvern1.jpg",
