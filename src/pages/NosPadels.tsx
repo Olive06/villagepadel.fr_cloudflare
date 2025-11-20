@@ -47,6 +47,15 @@ const terrains = [
     link: "/baraqueville",
   },
   {
+    id: "capvern",
+    name: "CAP'PADEL CAPVERN",
+    position: [43.097394, 0.329371],
+    address: "65130 Capvern, Hautes-Pyrénées",
+    courts: 1,
+    image: "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4",
+    link: "/capvern",
+  },
+  {
     id: "port-la-nouvelle",
     name: "TC Nouvellois - Port-La Nouvelle",
     position: [43.0146315, 3.0509743],
@@ -76,8 +85,8 @@ const NosPadels = () => {
 
   return (
     <div className="flex flex-col lg:flex-row h-screen">
-      {/* 📝 Panneau latéral gauche (widgets) */}
-      <div className="lg:w-1/3 w-full bg-white p-6 overflow-y-auto shadow-lg z-10 lg:h-full">
+      {/* 📝 Panneau latéral gauche (widgets) - Pleine largeur sur mobile */}
+      <div className="w-full lg:w-1/3 bg-white p-6 overflow-y-auto shadow-lg z-10 h-full">
         <h2 className="text-2xl font-bold mb-4">Rechercher un Padel</h2>
         <input
           type="text"
@@ -112,8 +121,8 @@ const NosPadels = () => {
         ))}
       </div>
 
-      {/* 🗺️ Carte interactive */}
-      <div className="lg:w-2/3 w-full flex-grow h-full">
+      {/* 🗺️ Carte interactive - Cachée sur mobile */}
+      <div className="hidden lg:block lg:w-2/3 w-full flex-grow h-full">
         <MapContainer center={[43.5, 2.2]} zoom={8} className="h-full w-full">
           {/* 🌍 Fond de carte stylisé */}
           <TileLayer

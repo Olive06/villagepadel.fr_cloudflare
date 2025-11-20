@@ -1,18 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
-import ImageCarousel from '../components/ImageCarousel';
-
-const CapvernImages = [
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/capvern1.jpg",
-    alt: "Terrain de padel à Capvern"
-  },
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/capvern2.jpg",
-    alt: "Vue du terrain de padel à Capvern"
-  }
-];
 
 const CapvernPadel: React.FC = () => {
   return (
@@ -35,7 +23,7 @@ const CapvernPadel: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/capvern1.jpg"
+          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
         />
         <meta property="og:url" content="https://villagepadel.fr/capvern" />
         <meta property="og:type" content="website" />
@@ -47,7 +35,7 @@ const CapvernPadel: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/capvern1.jpg"
+          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
         />
         <link rel="canonical" href="https://villagepadel.fr/capvern" />
       </Helmet>
@@ -78,7 +66,14 @@ const CapvernPadel: React.FC = () => {
               Réserver un terrain
             </button>
           </div>
-          <ImageCarousel images={CapvernImages} />
+          {/* Image principale */}
+          <div className="flex justify-center">
+            <img 
+              src="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
+              alt="Terrain de padel CAP'PADEL CAPVERN"
+              className="rounded-xl shadow-2xl max-w-4xl w-full"
+            />
+          </div>
         </div>
       </div>
 
@@ -357,7 +352,7 @@ const CapvernPadel: React.FC = () => {
             "longitude": "0.329371"
           },
           "url": "https://villagepadel.fr/capvern",
-          "image": "https://olive06.github.io/villagepadel.fr/images/capvern1.jpg",
+          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4",
           "priceRange": "6€ par personne",
           "amenityFeature": [
             {
