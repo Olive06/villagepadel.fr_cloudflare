@@ -7,6 +7,7 @@ import PadelInfo from './pages/PadelInfo';
 import GrisollesPadel from './pages/GrisollesPadel';
 import CampsasPadel from './pages/CampsasPadel';
 import BaraquevillePadel from './pages/BaraquevillePadel';
+import CapvernPadel from './pages/CapvernPadel';
 import PortLaNouvellePadel from './pages/PortLaNouvellePadel';
 import NosPadels from './pages/NosPadels';
 import QuoteRequest from './pages/QuoteRequest';
@@ -69,6 +70,7 @@ const App: React.FC = () => {
             <Route path="/grisolles" element={<GrisollesPadel />} />
             <Route path="/campsas" element={<CampsasPadel />} />
             <Route path="/baraqueville" element={<BaraquevillePadel />} />
+            <Route path="/capvern" element={<CapvernPadel />} />
             <Route path="/port-la-nouvelle" element={<PortLaNouvellePadel />} />
             <Route path="/chis" element={<ChisPadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
