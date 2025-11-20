@@ -84,9 +84,9 @@ const NosPadels = () => {
   );
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen">
-      {/* 📝 Panneau latéral gauche (widgets) - Pleine largeur sur mobile */}
-      <div className="w-full lg:w-1/3 bg-white p-6 overflow-y-auto shadow-lg z-10 h-full">
+    <div className="flex flex-col lg:flex-row lg:h-screen">
+      {/* 📝 Panneau latéral gauche (widgets) - Pleine largeur et hauteur sur mobile */}
+      <div className="w-full lg:w-1/3 bg-white p-6 overflow-y-auto shadow-lg z-10 min-h-screen lg:h-full">
         <h2 className="text-2xl font-bold mb-4">Rechercher un Padel</h2>
         <input
           type="text"
