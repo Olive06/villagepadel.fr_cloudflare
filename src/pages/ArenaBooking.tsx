@@ -1,10 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'; // <-- ajouté pour avoir l'URL exacte
 import { Helmet } from 'react-helmet';
 
 const ArenaBooking: React.FC = () => {
   const { bookingId } = useParams<{ bookingId: string }>();
+  const location = useLocation(); // <-- pour avoir l'URL complète avec query params
   const [showFallback, setShowFallback] = useState(false);
+
+  // URL de la nouvelle image 1200×630 (petit aperçu garanti)
+  const OG_IMAGE_URL =
+    'https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Farena_padel_new.jpeg?alt=media&token=d987f330-e824-4531-a58b-993b9d779e9a';
+
+  // Meta tags ident		 
+  const metaTags = (
+    <Helmet>
+      <title>Rejoindre mon Match - Village Padel</title>
+      <meta name="description" content="Rejoignez votre défi Arena et affrontez d'autres joueurs de padel !" />
+
+      {/* Open Graph – petit aperçu */}
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Rejoindre mon Match Village Padel" />
+      <meta property="og:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
+      <meta property="og:image" content={OG_IMAGE_URL} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Match Village Padel - Arena" />
+      <meta property="og:url" content={`https://villagepadel.fr${location.pathname}${location.search}`} />
+
+      {/* Twitter – petit aperçu */}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Rejoindre mon Match Village Padel" />
+      <meta name="twitter:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
+      <meta name="twitter:image" content={OG_IMAGE_URL} />
+    </Helmet>
+  );
 
   useEffect(() => {
     const deepLink = `villagepadel://arena/${bookingId}`;
@@ -20,18 +50,12 @@ const ArenaBooking: React.FC = () => {
 
       if (isAndroid) {
         window.location.href = androidIntent;
-
         setTimeout(() => {
-          if (!hasOpenedApp) {
-            window.location.href = deepLink;
-          }
+          if (!hasOpenedApp) window.location.href = deepLink;
         }, 500);
       } else if (isIOS) {
-        // Fallback to custom scheme if Universal Link fails
         setTimeout(() => {
-          if (!document.hidden) {
-            window.location.href = deepLink;
-          }
+          if (!document.hidden) window.location.href = deepLink;
         }, 1500);
       } else {
         window.location.href = deepLink;
@@ -59,7 +83,7 @@ const ArenaBooking: React.FC = () => {
 
     return () => {
       window.removeEventListener('blur', handleBlur);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.addEventListener('visibilitychange', handleVisibilityChange);
       clearTimeout(timer);
     };
   }, [bookingId]);
@@ -68,26 +92,13 @@ const ArenaBooking: React.FC = () => {
     const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
     const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
     const isMac = /Mac/.test(userAgent);
-
     const storeUrl = isIOS || isMac
       ? 'https://apps.apple.com/fr/app/village-padel/id6504023084'
       : 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
 
     return (
       <>
-        <Helmet>
-          <title>Rejoindre mon Match - Village Padel</title>
-          <meta name="description" content="Rejoignez votre défi Arena et affrontez d'autres joueurs de padel !" />
-          <meta property="og:title" content="Rejoindre mon Match Village Padel" />
-          <meta property="og:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
-          <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Farena_padel.jpeg?alt=media&token=4d9d7c02-af0f-4847-8af8-480c24aff178" />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content={`https://villagepadel.fr/arena/${bookingId}`} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Rejoindre mon Match Village Padel" />
-          <meta name="twitter:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
-          <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Farena_padel.jpeg?alt=media&token=4d9d7c02-af0f-4847-8af8-480c24aff178" />
-        </Helmet>
+        {metaTags}
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4">
           <h1 className="text-4xl font-bold mb-4">Village Padel</h1>
           <p className="text-xl mb-6">Ouvrir dans l'app...</p>
@@ -104,19 +115,7 @@ const ArenaBooking: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Rejoindre mon Match - Village Padel</title>
-        <meta name="description" content="Rejoignez votre défi Arena et affrontez d'autres joueurs de padel !" />
-        <meta property="og:title" content="Rejoindre mon Match Village Padel" />
-        <meta property="og:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
-        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Farena_padel.jpeg?alt=media&token=4d9d7c02-af0f-4847-8af8-480c24aff178" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://villagepadel.fr/arena/${bookingId}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Rejoindre mon Match Village Padel" />
-        <meta name="twitter:description" content="Votre défi Arena vous attend ! Rejoignez votre match et affrontez d'autres passionnés de padel." />
-        <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Farena_padel.jpeg?alt=media&token=4d9d7c02-af0f-4847-8af8-480c24aff178" />
-      </Helmet>
+      {metaTags}
       <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Village Padel</h1>
