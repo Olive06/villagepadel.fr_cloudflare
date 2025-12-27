@@ -1,22 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
-import ImageCarousel from '../components/ImageCarousel';
-
-const BaraquevilleImages = [
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq1.jpg",
-    alt: "Terrain de padel à Baraqueville au Tennis Padel Club de Baraqueville"
-  },
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq2.jpg",
-    alt: "Vue du terrain de padel à Baraqueville avec casier matériel"
-  },
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/baraq3.jpg",
-    alt: "Tennis Padel Club de Baraqueville - Installation complète"
-  }
-];
 
 const BaraquevillePadel: React.FC = () => {
   return (
@@ -56,33 +40,41 @@ const BaraquevillePadel: React.FC = () => {
         <link rel="canonical" href="https://villagepadel.fr/baraqueville" />
       </Helmet>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://olive06.github.io/villagepadel.fr/images/baraq1.jpg')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             Tennis Padel Club de Baraqueville
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             Terrain de padel 100% autonome en Aveyron - Accès et matériel automatisés
           </p>
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain
-            </button>
-          </div>
-          <ImageCarousel images={BaraquevilleImages} />
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain
+          </button>
         </div>
       </div>
 
@@ -215,7 +207,6 @@ const BaraquevillePadel: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Où nous trouver</h3>
             
-            {/* Simple Google Maps Embed like Campsas */}
             <div className="py-12">
               <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-6 text-center">Localisation du Padel de Baraqueville</h2>

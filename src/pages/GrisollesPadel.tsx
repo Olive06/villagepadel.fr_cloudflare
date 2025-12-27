@@ -1,32 +1,16 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'; // Added Helmet import
+import { Helmet } from 'react-helmet';
 import WeatherWidget from '../components/GrisollesPadel/WeatherWidget';
 import CourtInfo from '../components/GrisollesPadel/CourtInfo';
 import Features from '../components/GrisollesPadel/Features';
 import BookingCTA from '../components/GrisollesPadel/BookingCTA';
-import ImageCarousel from '../components/ImageCarousel';
 import LocationMap from '../components/GrisollesPadel/LocationMap';
 import WhatsAppCommunity from '../components/GrisollesPadel/WhatsAppCommunity';
-
-const grisollesImages = [
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg",
-    alt: "Terrain de padel Grisolles"
-  },
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1736010636/IMG_2477_lmkxty_4eb23e.jpg",
-    alt: "Installation padel"
-  },
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1736011104/cjeyubfsyydtcdwkkxaw_c04b07.jpg",
-    alt: "Vue du terrain"
-  }
-];
 
 const GrisollesPadel = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Added SEO Meta Tags with Helmet */}
+      {/* SEO Meta Tags */}
       <Helmet>
         <title>Padel de Grisolles - Terrain Outdoor Premium | Village Padel</title>
         <meta
@@ -37,7 +21,6 @@ const GrisollesPadel = () => {
           name="keywords"
           content="padel Grisolles, terrain padel 82, réservation padel Grisolles, padel outdoor, Village Padel"
         />
-        {/* Open Graph */}
         <meta property="og:title" content="Padel de Grisolles - Village Padel" />
         <meta
           property="og:description"
@@ -49,7 +32,6 @@ const GrisollesPadel = () => {
         />
         <meta property="og:url" content="https://villagepadel.fr/grisolles" />
         <meta property="og:type" content="website" />
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Padel de Grisolles - Village Padel" />
         <meta
@@ -60,49 +42,49 @@ const GrisollesPadel = () => {
           name="twitter:image"
           content="https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg"
         />
-        {/* Canonical URL */}
         <link rel="canonical" href="https://villagepadel.fr/grisolles" />
       </Helmet>
 
-      {/* Hero Section - More impactful header */}
-      <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             Padel de Grisolles
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             Découvrez notre terrain outdoor, conçu pour offrir une expérience unique 
             et conviviale aux amateurs de padel.
           </p>
-          
-          {/* Primary CTA - With smart app redirect - Responsive sizing */}
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                // Smart app redirect based on device
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  // Android device - Google Play link
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  // iOS device - App Store link
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  // Desktop or other device - fallback to web booking
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain maintenant
-            </button>
-          </div>
-          
-          <ImageCarousel images={grisollesImages} />
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain maintenant
+          </button>
         </div>
       </div>
 
-      {/* Quick Info Banner - Highlight key information */}
+      {/* Quick Info Banner */}
       <div className="bg-white shadow-md py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-around items-center text-center">
@@ -126,9 +108,9 @@ const GrisollesPadel = () => {
         </div>
       </div>
 
-      {/* Main Content - Better organized in clear sections */}
+      {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
-        {/* Court Information - Priority content */}
+        {/* Court Information */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Notre Terrain de Padel</h2>
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -136,7 +118,7 @@ const GrisollesPadel = () => {
           </div>
         </section>
         
-        {/* Features Section - Removed redundant title */}
+        {/* Features Section */}
         <section className="mb-16">
           <div className="bg-white rounded-xl shadow-lg p-6">
             <Features />
@@ -158,20 +140,20 @@ const GrisollesPadel = () => {
           </div>
         </div>
         
-        {/* Location Map - Removed redundant title */}
+        {/* Location Map */}
         <section className="mb-16">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <LocationMap />
           </div>
         </section>
         
-        {/* Booking Section - Changed to consistent style with white background */}
+        {/* Booking Section */}
         <section className="bg-white rounded-xl shadow-lg p-8">
           <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Prêt à Jouer ?</h2>
           <BookingCTA />
         </section>
         
-        {/* Added SEO-Rich Description Section */}
+        {/* SEO Description Section */}
         <section className="py-12 mt-12 bg-white rounded-xl shadow-lg">
           <div className="container mx-auto px-4 max-w-4xl">
             <details className="bg-gray-50 rounded-xl shadow-md p-6">
@@ -203,7 +185,7 @@ const GrisollesPadel = () => {
         </section>
       </div>
       
-      {/* Schema.org JSON-LD Structured Data */}
+      {/* Schema.org JSON-LD */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -228,8 +210,6 @@ const GrisollesPadel = () => {
           "image": "https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg"
         })}
       </script>
-      
-      {/* No custom footer needed - using the site's default footer */}
     </div>
   );
 };

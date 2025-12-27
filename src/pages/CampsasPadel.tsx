@@ -3,23 +3,7 @@ import { Helmet } from 'react-helmet';
 import WeatherWidget_campsas from '../components/CampsasPadel/WeatherWidget_campsas';
 import Features_campsas from '../components/CampsasPadel/Features_campsas';
 import BookingCTA_campsas from '../components/CampsasPadel/BookingCTA_campsas';
-import ImageCarousel from '../components/ImageCarousel';
 import LocationMap_campsas from '../components/CampsasPadel/LocationMap_campsas';
-
-const CampsasImages = [
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg",
-    alt: "Terrain de padel à Campsas au Tennis Padel Avenir Campsanais"
-  },
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1741196599/480505487_985367373694261_8641342512726171271_n_fe8f8n.jpg",
-    alt: "Installation du terrain de padel à Campsas"
-  },
-  {
-    url: "https://res.cloudinary.com/damfvriyn/image/upload/v1741196415/480328728_985367503694248_4817792986897410785_n_z6g1oy.jpg",
-    alt: "Vue du terrain de padel à Campsas"
-  }
-];
 
 const CampsasPadel = () => {
   return (
@@ -59,33 +43,41 @@ const CampsasPadel = () => {
         <link rel="canonical" href="https://villagepadel.fr/campsas" />
       </Helmet>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             Tennis Padel Avenir Campsanais
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-4">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             Terrain de padel 100% autonome à Campsas - Accès et matériel automatisés
           </p>
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain
-            </button>
-          </div>
-          <ImageCarousel images={CampsasImages} />
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain
+          </button>
         </div>
       </div>
 
@@ -112,8 +104,6 @@ const CampsasPadel = () => {
           </div>
         </div>
       </div>
-
-
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
