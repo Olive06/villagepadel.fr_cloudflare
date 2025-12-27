@@ -1,44 +1,80 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { MapPin, Users, Coffee, Shirt, Download } from 'lucide-react';
-import ImageCarousel from '../components/ImageCarousel';
-
-const ChisImages = [
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/bigorre.jpg",
-    alt: "Terrain de padel au Tennis Club Pyrénées Bigorre à Chis"
-  }
-];
 
 const ChisPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées (65)</title>
+        <meta
+          name="description"
+          content="Terrain de padel extérieur à Chis (65), Hautes-Pyrénées. 20€ jour / 24€ soirée. Club house, vestiaires, bar, location raquettes 2€. Réservez en ligne !"
+        />
+        <meta
+          name="keywords"
+          content="padel Chis, padel Hautes-Pyrénées, padel 65, Tennis Club Pyrénées Bigorre, réservation padel, padel Tarbes, padel Lourdes, Village Padel"
+        />
+        <meta property="og:title" content="Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées" />
+        <meta
+          property="og:description"
+          content="Terrain de padel extérieur à Chis (65). 20€ jour / 24€ soirée. Club house, vestiaires, bar. Réservez en ligne !"
+        />
+        <meta
+          property="og:image"
+          content="https://olive06.github.io/villagepadel.fr/images/bigorre.jpg"
+        />
+        <meta property="og:url" content="https://villagepadel.fr/chis" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées" />
+        <meta
+          name="twitter:description"
+          content="Terrain de padel extérieur à Chis (65). 20€ jour / 24€ soirée. Club house, vestiaires, bar. Réservez en ligne !"
+        />
+        <meta
+          name="twitter:image"
+          content="https://olive06.github.io/villagepadel.fr/images/bigorre.jpg"
+        />
+        <link rel="canonical" href="https://villagepadel.fr/chis" />
+      </Helmet>
+
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://olive06.github.io/villagepadel.fr/images/bigorre.jpg')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             Tennis Club Pyrénées Bigorre
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             Terrain de padel extérieur à Chis - Club house, vestiaires, bar et matériel sur place
           </p>
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-blue-600 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain
-            </button>
-          </div>
-          <ImageCarousel images={ChisImages} />
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain
+          </button>
         </div>
       </div>
 
@@ -47,19 +83,19 @@ const ChisPadel: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-around items-center text-center">
             <div className="px-4 py-2">
-              <span className="block text-blue-600 font-bold">Prix Jour</span>
+              <span className="block text-brand-blue font-bold">Prix Jour</span>
               <span className="text-gray-700">20€ / 1h30</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-blue-600 font-bold">Prix Soirée</span>
+              <span className="block text-brand-blue font-bold">Prix Soirée</span>
               <span className="text-gray-700">24€ / 1h30</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-blue-600 font-bold">Raquettes</span>
+              <span className="block text-brand-blue font-bold">Raquettes</span>
               <span className="text-gray-700">Location 2€</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-blue-600 font-bold">Services</span>
+              <span className="block text-brand-blue font-bold">Services</span>
               <span className="text-gray-700">Bar + Vestiaires</span>
             </div>
           </div>
@@ -171,7 +207,6 @@ const ChisPadel: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Où nous trouver</h3>
             
-            {/* Simple Google Maps Embed like Campsas */}
             <div className="py-12">
               <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-6 text-center">Tennis Club Pyrénées Bigorre - Chis</h2>
@@ -241,7 +276,7 @@ const ChisPadel: React.FC = () => {
         <section className="py-12 mt-12 bg-white rounded-xl shadow-lg">
           <div className="container mx-auto px-4 max-w-4xl">
             <details className="bg-gray-50 rounded-xl shadow-md p-6">
-              <summary className="cursor-pointer text-xl font-semibold text-blue-600 mb-4">
+              <summary className="cursor-pointer text-xl font-semibold text-brand-blue mb-4">
                 En savoir plus sur le terrain
               </summary>
               <div className="prose prose-lg max-w-none mt-4 text-gray-700">
@@ -256,7 +291,7 @@ const ChisPadel: React.FC = () => {
                 </p>
 
                 <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold text-blue-600 mb-2">Tarifs et services :</h4>
+                  <h4 className="font-semibold text-brand-blue mb-2">Tarifs et services :</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
                     <li><strong>20€ pour 1h30 en journée</strong> - Tarif attractif</li>
                     <li><strong>24€ pour 1h30 en soirée</strong> - Avec éclairage</li>
@@ -331,7 +366,7 @@ const ChisPadel: React.FC = () => {
             "longitude": "0.121392"
           },
           "url": "https://villagepadel.fr/chis",
-          "image": "https://olive06.github.io/villagepadel.fr/images/bigorre.png",
+          "image": "https://olive06.github.io/villagepadel.fr/images/bigorre.jpg",
           "priceRange": "20€ jour / 24€ soirée pour 1h30",
           "amenityFeature": [
             {

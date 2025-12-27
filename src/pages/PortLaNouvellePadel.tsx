@@ -1,22 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
-import ImageCarousel from '../components/ImageCarousel';
-
-const PortLaNouvelleImages = [
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/port1.png",
-    alt: "Terrain de padel à Port-La Nouvelle au TC Nouvellois"
-  },
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/port2.png",
-    alt: "Vue des terrains de padel à Port-La Nouvelle"
-  },
-  {
-    url: "https://olive06.github.io/villagepadel.fr/images/port3.png",
-    alt: "TC Nouvellois Port-La Nouvelle - Installation complète"
-  }
-];
 
 const PortLaNouvellePadel: React.FC = () => {
   return (
@@ -39,7 +23,7 @@ const PortLaNouvellePadel: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/port1.png"
+          content="https://olive06.github.io/villagepadel.fr/images/port2.png"
         />
         <meta property="og:url" content="https://villagepadel.fr/port-la-nouvelle" />
         <meta property="og:type" content="website" />
@@ -51,38 +35,46 @@ const PortLaNouvellePadel: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/port1.png"
+          content="https://olive06.github.io/villagepadel.fr/images/port2.png"
         />
         <link rel="canonical" href="https://villagepadel.fr/port-la-nouvelle" />
       </Helmet>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond - Photo 2 */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://olive06.github.io/villagepadel.fr/images/port2.png')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             TC Nouvellois - Port-La Nouvelle
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             2 terrains de padel 100% autonomes dans l'Aude - Accès et matériel automatisés
           </p>
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain
-            </button>
-          </div>
-          <ImageCarousel images={PortLaNouvelleImages} />
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain
+          </button>
         </div>
       </div>
 
@@ -214,7 +206,6 @@ const PortLaNouvellePadel: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Où nous trouver</h3>
             
-            {/* Simple Google Maps Embed */}
             <div className="py-12">
               <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-6 text-center">Localisation du Padel de Port-La Nouvelle</h2>
@@ -376,7 +367,7 @@ const PortLaNouvellePadel: React.FC = () => {
             "longitude": "3.0509743"
           },
           "url": "https://villagepadel.fr/port-la-nouvelle",
-          "image": "https://olive06.github.io/villagepadel.fr/images/port1.png",
+          "image": "https://olive06.github.io/villagepadel.fr/images/port2.png",
           "priceRange": "24€ pour 1h30",
           "amenityFeature": [
             {
