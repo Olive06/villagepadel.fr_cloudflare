@@ -40,40 +40,41 @@ const TCMuretPadel: React.FC = () => {
         <link rel="canonical" href="https://villagepadel.fr/tc-muret" />
       </Helmet>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
+      {/* Hero Section avec image en background */}
+      <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
+        {/* Image de fond */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc')`
+          }}
+        />
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Contenu texte */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             TC MURET
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
             Terrain de padel au cœur du Complexe Nelson Paillou - Haute-Garonne
           </p>
-          <div className="flex justify-center mb-10">
-            <button 
-              className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105 max-w-[80%] sm:max-w-none"
-              onClick={() => {
-                const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-                if (/android/i.test(userAgent)) {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-                  window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
-                } else {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
-                }
-              }}
-            >
-              Réserver un terrain
-            </button>
-          </div>
-          {/* Image principale */}
-          <div className="flex justify-center">
-            <img 
-              src="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
-              alt="Terrain de padel TC MURET - Complexe Nelson Paillou"
-              className="rounded-xl shadow-2xl max-w-4xl w-full"
-            />
-          </div>
+          <button 
+            className="bg-white text-brand-blue font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+            onClick={() => {
+              const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+              if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/village-padel/id6504023084';
+              } else {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.villagePadel&hl=fr';
+              }
+            }}
+          >
+            Réserver un terrain
+          </button>
         </div>
       </div>
 
