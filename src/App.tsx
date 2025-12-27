@@ -9,6 +9,7 @@ import CampsasPadel from './pages/CampsasPadel';
 import BaraquevillePadel from './pages/BaraquevillePadel';
 import CapvernPadel from './pages/CapvernPadel';
 import PortLaNouvellePadel from './pages/PortLaNouvellePadel';
+import TCMuretPadel from './pages/TCmuret';
 import NosPadels from './pages/NosPadels';
 import QuoteRequest from './pages/QuoteRequest';
 import ReservationConfirmation from './pages/ReservationConfirmation';
@@ -73,6 +74,7 @@ const App: React.FC = () => {
             <Route path="/capvern" element={<CapvernPadel />} />
             <Route path="/port-la-nouvelle" element={<PortLaNouvellePadel />} />
             <Route path="/chis" element={<ChisPadel />} />
+            <Route path="/tc-muret" element={<TCMuretPadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
             <Route path="/application" element={<AppFeatures />} />
             <Route path="/cgu" element={<CGU />} />
@@ -91,4 +93,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;// Comment for redeploy
+export default App;

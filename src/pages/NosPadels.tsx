@@ -73,6 +73,15 @@ const terrains = [
     image: "https://olive06.github.io/villagepadel.fr/images/bigorre.jpg",
     link: "/chis",
   },
+  {
+    id: "tc-muret",
+    name: "TC MURET",
+    position: [43.472792, 1.338952],
+    address: "Complexe Nelson Paillou, Av. Bernard IV, 31600 Muret",
+    courts: 1,
+    image: "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc",
+    link: "/tc-muret",
+  },
 ];
 
 const NosPadels = () => {

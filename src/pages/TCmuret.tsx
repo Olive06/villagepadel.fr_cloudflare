@@ -1,53 +1,53 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
+import { MapPin, Users, Smartphone, Award, Download, Clock, Car } from 'lucide-react';
 
-const CapvernPadel: React.FC = () => {
+const TCMuretPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées (65)</title>
+        <title>TC MURET - Terrain de Padel | Haute-Garonne (31) | Village Padel</title>
         <meta
           name="description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€ (raquettes + balles). Réservez en ligne avec Village Padel !"
+          content="TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31). À partir de 8€/personne, location matériel 4€ (raquettes + balles). Réservez en ligne avec Village Padel !"
         />
         <meta
           name="keywords"
-          content="CAP'PADEL CAPVERN, padel Capvern, padel Hautes-Pyrénées, padel 65, padel Capvern-les-Bains, réservation padel, padel autonome, Village Padel"
+          content="TC Muret, padel Muret, padel Haute-Garonne, padel 31, Tennis Club Muret, réservation padel, padel sud Toulouse, Village Padel, Complexe Nelson Paillou"
         />
-        <meta property="og:title" content="CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées" />
+        <meta property="og:title" content="TC MURET - Terrain de Padel | Haute-Garonne (31)" />
         <meta
           property="og:description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€. Réservez en ligne !"
+          content="TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31). À partir de 8€/personne, location matériel 4€. Réservez en ligne !"
         />
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Fcapvern_app.webp?alt=media&token=a7a7161c-c88f-4ca5-b763-0f873cca00ef"
+          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
         />
-        <meta property="og:url" content="https://villagepadel.fr/capvern" />
+        <meta property="og:url" content="https://villagepadel.fr/tc-muret" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées" />
+        <meta name="twitter:title" content="TC MURET - Terrain de Padel | Haute-Garonne (31)" />
         <meta
           name="twitter:description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65). 6€/personne, matériel 4€. Réservez en ligne !"
+          content="TC MURET - Terrain de padel à Muret (31). À partir de 8€/personne, matériel 4€. Réservez en ligne !"
         />
         <meta
           name="twitter:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
+          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
         />
-        <link rel="canonical" href="https://villagepadel.fr/capvern" />
+        <link rel="canonical" href="https://villagepadel.fr/tc-muret" />
       </Helmet>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
-            CAP'PADEL CAPVERN
+            TC MURET
           </h1>
           <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Terrain de padel 100% autonome dans les Hautes-Pyrénées - Accès automatisé
+            Terrain de padel au cœur du Complexe Nelson Paillou - Haute-Garonne
           </p>
           <div className="flex justify-center mb-10">
             <button 
@@ -69,8 +69,8 @@ const CapvernPadel: React.FC = () => {
           {/* Image principale */}
           <div className="flex justify-center">
             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
-              alt="Terrain de padel CAP'PADEL CAPVERN"
+              src="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
+              alt="Terrain de padel TC MURET - Complexe Nelson Paillou"
               className="rounded-xl shadow-2xl max-w-4xl w-full"
             />
           </div>
@@ -83,19 +83,19 @@ const CapvernPadel: React.FC = () => {
           <div className="flex flex-wrap justify-around items-center text-center">
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Tarif</span>
-              <span className="text-gray-700">6€ / personne</span>
+              <span className="text-gray-700">À partir de 8€ / personne</span>
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Matériel</span>
               <span className="text-gray-700">4€ (raquettes + balles)</span>
             </div>
             <div className="px-4 py-2">
-              <span className="block text-brand-blue font-bold">Accès</span>
-              <span className="text-gray-700">100% Autonome</span>
+              <span className="block text-brand-blue font-bold">Réservation</span>
+              <span className="text-gray-700">Via Village Padel</span>
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Localisation</span>
-              <span className="text-gray-700">Capvern (65)</span>
+              <span className="text-gray-700">Muret (31)</span>
             </div>
           </div>
         </div>
@@ -106,24 +106,24 @@ const CapvernPadel: React.FC = () => {
         
         {/* Court Information Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">CAP'PADEL CAPVERN</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">TC MURET - Tennis Club de Muret</h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-bold mb-6">Caractéristiques du terrain</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="text-orange-500 text-2xl">☀️</div>
+                <div className="text-orange-500 text-2xl">🏟️</div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-2">Type de terrain</h4>
-                  <p className="text-gray-700">Outdoor (en plein air), au cœur des Hautes-Pyrénées</p>
+                  <h4 className="font-semibold text-lg mb-2">Complexe sportif</h4>
+                  <p className="text-gray-700">Situé au Complexe Nelson Paillou, infrastructure sportive de qualité à Muret</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="text-orange-500 text-2xl">🔓</div>
+                <div className="text-orange-500 text-2xl">📱</div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-2">Accès autonome</h4>
-                  <p className="text-gray-700">Accès 100% automatisé via l'application Village Padel. Système entièrement autonome !</p>
+                  <h4 className="font-semibold text-lg mb-2">Réservation en ligne</h4>
+                  <p className="text-gray-700">Réservez facilement via l'application Village Padel, disponible sur iOS et Android</p>
                 </div>
               </div>
               
@@ -140,7 +140,7 @@ const CapvernPadel: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Tarifs</h4>
                   <ul className="text-gray-700">
-                    <li>• 6€ par personne</li>
+                    <li>• À partir de 8€ par personne</li>
                     <li>• Matériel : +4€ (raquettes et balles)</li>
                   </ul>
                 </div>
@@ -153,7 +153,7 @@ const CapvernPadel: React.FC = () => {
         <section className="mb-16">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              Pourquoi choisir CAP'PADEL CAPVERN ?
+              Pourquoi choisir TC MURET ?
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -161,24 +161,24 @@ const CapvernPadel: React.FC = () => {
                 <div className="mb-4">
                   <MapPin className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Cadre exceptionnel</h3>
-                <p className="text-gray-600">Au cœur des Hautes-Pyrénées, près de Capvern-les-Bains et du plateau de Lannemezan</p>
+                <h3 className="font-bold text-lg mb-2">Emplacement idéal</h3>
+                <p className="text-gray-600">Au sud de Toulouse, facilement accessible depuis l'agglomération toulousaine</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="mb-4">
                   <Users className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Tarif attractif</h3>
-                <p className="text-gray-600">Seulement 6€ par personne pour profiter du terrain</p>
+                <h3 className="font-bold text-lg mb-2">Tarif compétitif</h3>
+                <p className="text-gray-600">À partir de 8€ par personne pour profiter du terrain</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="mb-4">
                   <Smartphone className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">100% Autonome</h3>
-                <p className="text-gray-600">Réservez et accédez au terrain via l'application Village Padel</p>
+                <h3 className="font-bold text-lg mb-2">Réservation facile</h3>
+                <p className="text-gray-600">Réservez en quelques clics via l'application Village Padel</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
@@ -199,18 +199,18 @@ const CapvernPadel: React.FC = () => {
             
             <div className="py-12">
               <div className="container mx-auto px-4">
-                <h2 className="text-2xl font-bold mb-6 text-center">Localisation de CAP'PADEL CAPVERN</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">Localisation de TC MURET</h2>
                 <div className="flex justify-center">
                   <div className="w-full max-w-4xl">
                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.5!2d0.329371!3d43.097394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDA1JzUwLjYiTiAwwrAxOSc0NS43IkU!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.5!2d1.338952!3d43.472792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb9c8f5c12345%3A0x0!2sComplexe%20Nelson%20Paillou!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
                         className="absolute top-0 left-0 w-full h-full"
                         style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Localisation de CAP'PADEL CAPVERN"
+                        title="Localisation de TC MURET - Complexe Nelson Paillou"
                       ></iframe>
                     </div>
                   </div>
@@ -220,8 +220,12 @@ const CapvernPadel: React.FC = () => {
             
             {/* Contact Information */}
             <div className="text-gray-700 space-y-2">
-              <p><strong>Localisation :</strong> Capvern, 65130 Hautes-Pyrénées, France</p>
-              <p className="text-sm text-gray-600">Station thermale de Capvern-les-Bains - Plateau de Lannemezan</p>
+              <p><strong>Adresse :</strong> Complexe Nelson Paillou, Avenue Bernard IV, 31600 Muret</p>
+              <p className="text-sm text-gray-600">Sud de Toulouse - Haute-Garonne (31)</p>
+              <div className="flex items-center gap-2 mt-3">
+                <Car className="h-5 w-5 text-orange-500" />
+                <span className="text-sm text-gray-600">Parking disponible sur place</span>
+              </div>
             </div>
           </div>
         </div>
@@ -233,7 +237,7 @@ const CapvernPadel: React.FC = () => {
               Réservez votre créneau dès maintenant !
             </h2>
             
-            <div className="flex justify-center gap-4 mb-6">
+            <div className="flex justify-center gap-4 mb-6 flex-wrap">
               <a
                 href="https://apps.apple.com/fr/app/village-padel/id6504023084"
                 target="_blank"
@@ -269,62 +273,62 @@ const CapvernPadel: React.FC = () => {
                 En savoir plus sur le terrain
               </summary>
               <div className="prose prose-lg max-w-none mt-4 text-gray-700">
-                <h2>CAP'PADEL CAPVERN - Terrain 100% Autonome</h2>
+                <h2>TC MURET - Tennis Club de Muret</h2>
                 <p>
-                  <strong>CAP'PADEL CAPVERN</strong> est situé dans les Hautes-Pyrénées (65), à proximité de la célèbre station thermale de Capvern-les-Bains. <strong>Entièrement autonome</strong>, il propose un tarif attractif de <strong>6€ par personne</strong>, avec un système d'accès révolutionnaire !
+                  Le <strong>TC MURET</strong> (Tennis Club de Muret) est situé au cœur du <strong>Complexe Nelson Paillou</strong>, à Muret en Haute-Garonne (31). Ce terrain de padel bénéficie d'une infrastructure sportive de qualité et d'un emplacement stratégique au sud de Toulouse.
                 </p>
                 
-                <h3>Accès 100% automatisé</h3>
+                <h3>Un emplacement stratégique</h3>
                 <p>
-                  Plus besoin de rendez-vous ! Réservez via l'application <strong>Village Padel</strong> (disponible sur iOS et Android) et ouvrez directement le terrain avec votre smartphone. Le terrain est équipé d'un système d'accès entièrement automatisé.
+                  Situé à seulement 20 minutes au sud de Toulouse, le <strong>TC MURET</strong> est facilement accessible depuis toute l'agglomération toulousaine. Le Complexe Nelson Paillou offre des installations modernes et un parking gratuit pour les joueurs.
                 </p>
 
-                <h3>Location de matériel - 4€ seulement</h3>
+                <h3>Location de matériel - 4€</h3>
                 <p>
-                  <strong>CAP'PADEL CAPVERN</strong> met à votre disposition du <strong>matériel de qualité pour seulement 4€</strong> : raquettes et balles. Ajoutez simplement cette option lors de votre réservation via l'application.
+                  Le <strong>TC MURET</strong> met à votre disposition du <strong>matériel de qualité pour seulement 4€</strong> : raquettes et balles. Ajoutez simplement cette option lors de votre réservation via l'application Village Padel.
                 </p>
 
-                <h3>Tarification simple et transparente</h3>
+                <h3>Tarification</h3>
                 <div className="bg-blue-50 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold text-brand-blue mb-2">Nos tarifs :</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li><strong>6€ par personne</strong> - Tarif unique et simple</li>
+                    <li><strong>À partir de 8€ par personne</strong></li>
                     <li><strong>Matériel : +4€</strong> - Raquettes et balles de qualité</li>
                   </ul>
-                  <p className="text-sm mt-2 text-gray-600">Exemple : pour 4 joueurs = 24€ + 4€ matériel (optionnel) = 28€ total</p>
+                  <p className="text-sm mt-2 text-gray-600">Exemple : pour 4 joueurs = à partir de 32€ + 4€ matériel (optionnel) = 36€ total</p>
                 </div>
 
-                <h3>Au cœur des Hautes-Pyrénées</h3>
+                <h3>Au cœur de la Haute-Garonne</h3>
                 <p>
-                  <strong>CAP'PADEL CAPVERN</strong> est idéalement situé dans les Hautes-Pyrénées (65), près de la station thermale de Capvern-les-Bains, sur le plateau de Lannemezan. Un cadre naturel exceptionnel pour pratiquer le padel.
+                  <strong>TC MURET</strong> est idéalement situé en Haute-Garonne (31), offrant un accès facile depuis Toulouse et les communes environnantes comme Portet-sur-Garonne, Seysses, Roques ou encore Saint-Lys.
                 </p>
 
                 <div className="bg-green-50 p-4 rounded-lg mt-6">
-                  <h4 className="font-semibold text-green-700 mb-2">Comment ça marche ?</h4>
+                  <h4 className="font-semibold text-green-700 mb-2">Comment réserver ?</h4>
                   <ol className="list-decimal list-inside space-y-1 text-sm text-green-800">
                     <li>Téléchargez l'app Village Padel</li>
-                    <li>Sélectionnez votre créneau à CAP'PADEL CAPVERN</li>
-                    <li>Indiquez le nombre de joueurs (6€/personne)</li>
+                    <li>Sélectionnez TC MURET dans la liste des terrains</li>
+                    <li>Choisissez votre créneau horaire</li>
+                    <li>Indiquez le nombre de joueurs</li>
                     <li>Ajoutez le matériel si besoin (+4€)</li>
                     <li>Payez en ligne de façon sécurisée</li>
-                    <li>Arrivez au terrain et ouvrez avec votre smartphone</li>
                   </ol>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg mt-4">
-                  <h4 className="font-semibold text-yellow-700 mb-2">Pourquoi choisir CAP'PADEL CAPVERN ?</h4>
+                  <h4 className="font-semibold text-yellow-700 mb-2">Pourquoi choisir TC MURET ?</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm text-yellow-800">
-                    <li><strong>Tarif attractif</strong> - Seulement 6€ par personne</li>
-                    <li><strong>Système 100% autonome</strong> - Aucune contrainte horaire</li>
+                    <li><strong>Tarif compétitif</strong> - À partir de 8€ par personne</li>
+                    <li><strong>Complexe sportif de qualité</strong> - Infrastructures modernes</li>
                     <li><strong>Matériel disponible</strong> - Location à 4€ seulement</li>
-                    <li><strong>Cadre exceptionnel</strong> - Au cœur des Hautes-Pyrénées</li>
-                    <li><strong>Proximité de Capvern-les-Bains</strong> - Station thermale renommée</li>
+                    <li><strong>Proche de Toulouse</strong> - À 20 min au sud de la ville rose</li>
+                    <li><strong>Parking gratuit</strong> - Stationnement facile sur place</li>
                   </ul>
                 </div>
 
                 <h3>Accès et stationnement</h3>
                 <p>
-                  Le terrain est situé à Capvern (65130), facilement accessible depuis le plateau de Lannemezan et les communes environnantes. Parking disponible sur place.
+                  Le terrain est situé au Complexe Nelson Paillou, Avenue Bernard IV, 31600 Muret. Facilement accessible en voiture depuis Toulouse (A64/D820) ou les communes avoisinantes. Grand parking gratuit disponible sur place.
                 </p>
               </div>
             </details>
@@ -337,40 +341,44 @@ const CapvernPadel: React.FC = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SportsActivityLocation",
-          "name": "CAP'PADEL CAPVERN - Terrain 100% Autonome",
-          "description": "CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€. Accès automatisé via smartphone.",
+          "name": "TC MURET - Tennis Club de Muret",
+          "description": "TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31), Haute-Garonne. À partir de 8€/personne, matériel 4€. Réservation via Village Padel.",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Capvern",
-            "addressRegion": "Hautes-Pyrénées",
-            "postalCode": "65130",
+            "streetAddress": "Complexe Nelson Paillou, Avenue Bernard IV",
+            "addressLocality": "Muret",
+            "addressRegion": "Haute-Garonne",
+            "postalCode": "31600",
             "addressCountry": "FR"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "43.097394",
-            "longitude": "0.329371"
+            "latitude": "43.472792",
+            "longitude": "1.338952"
           },
-          "url": "https://villagepadel.fr/capvern",
-          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4",
-          "priceRange": "6€ par personne",
+          "url": "https://villagepadel.fr/tc-muret",
+          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc",
+          "priceRange": "À partir de 8€ par personne",
           "amenityFeature": [
             {
               "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
               "name": "Location matériel 4€"
             },
             {
               "@type": "LocationFeatureSpecification",
-              "name": "Terrain outdoor"
+              "name": "Parking gratuit"
             },
             {
               "@type": "LocationFeatureSpecification",
-              "name": "Parking disponible"
+              "name": "Complexe sportif moderne"
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Réservation en ligne"
             }
+          ],
+          "sameAs": [
+            "https://maps.app.goo.gl/WQrt6tmZXkwonZc48"
           ]
         })}
       </script>
@@ -378,4 +386,4 @@ const CapvernPadel: React.FC = () => {
   );
 };
 
-export default CapvernPadel;
+export default TCMuretPadel;
