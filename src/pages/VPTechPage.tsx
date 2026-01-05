@@ -398,7 +398,7 @@ const VPTechPage = () => {
                   </li>
                   <li className="flex items-start">
                     <Shield className="text-brand-orange h-5 w-5 mr-3 flex-shrink-0 mt-0.5" />
-                    <span>Installation et formation incluses</span>
+                    <span>Formation incluse</span>
                   </li>
                 </ul>
                 <a 
@@ -878,7 +878,7 @@ ${name || 'Prospect'}`);
             {
               "@type": "Offer",
               "name": "VP Tech Complet",
-              "description": "Solution tout-en-un avec installation et formation - Sur devis"
+              "description": "Solution tout-en-un avec formation - Sur devis"
             }
           ],
           "provider": {
