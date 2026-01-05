@@ -97,7 +97,7 @@ const VPTechPage = () => {
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Solution Complète</span>
-              <span className="text-gray-700">3 200€ TTC</span>
+              <span className="text-gray-700">Sur devis</span>
             </div>
             <div className="px-4 py-2">
               <span className="block text-brand-blue font-bold">Support</span>
@@ -376,8 +376,8 @@ const VPTechPage = () => {
               </div>
               <div className="p-8">
                 <div className="text-center mb-8">
-                  <p className="text-4xl font-bold text-brand-blue mb-1">3 200€ TTC</p>
-                  <p className="text-gray-600">Tout Compris</p>
+                  <p className="text-4xl font-bold text-brand-blue mb-1">Sur devis</p>
+                  <p className="text-gray-600">Adapté à vos besoins</p>
                 </div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start">
@@ -878,9 +878,7 @@ ${name || 'Prospect'}`);
             {
               "@type": "Offer",
               "name": "VP Tech Complet",
-              "price": "3200",
-              "priceCurrency": "EUR",
-              "description": "Solution tout-en-un avec installation et formation"
+              "description": "Solution tout-en-un avec installation et formation - Sur devis"
             }
           ],
           "provider": {
