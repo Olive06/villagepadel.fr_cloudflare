@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retour Village Padel</title>
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+      text-align: center; 
+      padding: 50px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      max-width: 360px;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #e0e0e0;
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 24px;
+    }
+    @keyframes spin { 
+      0% { transform: rotate(0deg); } 
+      100% { transform: rotate(360deg); } 
+    }
+    h2 { margin: 0 0 8px; color: #333; }
+    p { color: #666; margin: 0 0 24px; }
+    a { 
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { background: #5a6fd6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <h2>Retour à l'application</h2>
+    <p>Vous allez être redirigé...</p>
+    <a id="manualLink" href="#">Ouvrir Village Padel</a>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('vads_trans_status') || '';
+    const transId = params.get('vads_trans_id') || '';
+    const result = params.get('vads_result') || '';
+    const orderId = params.get('vads_order_id') || '';
+    
+    const deepLink = 'villagepadel://payzen-return' +
+      '?status=' + encodeURIComponent(status) +
+      '&transId=' + encodeURIComponent(transId) +
+      '&result=' + encodeURIComponent(result) +
+      '&orderId=' + encodeURIComponent(orderId);
+    
+    document.getElementById('manualLink').href = deepLink;
+    
+    // Auto-redirect
+    setTimeout(function() {
+      window.location.href = deepLink;
+    }, 300);
+  </script>
+</body>
+</html>
