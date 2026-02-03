@@ -85,7 +85,7 @@ const terrains = [
   {
     id: "lastours",
     name: "Château de Lastours",
-    position: [43.3356, 2.3785],
+    position: [43.0466928, 2.900298],
     address: "11600 Lastours, Aude",
     courts: 1,
     image: "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a",

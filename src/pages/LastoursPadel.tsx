@@ -217,7 +217,7 @@ const LastoursPadel: React.FC = () => {
                   <div className="w-full max-w-4xl">
                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.5!2d2.3785!3d43.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae2d8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sLastours!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.5!2d2.900298!3d43.0466928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b04e62276ebf09%3A0x395a8b736886a082!2sCh%C3%A2teau%20de%20Lastours!5e0!3m2!1sfr!2sfr!4v1641234567890!5m2!1sfr!2sfr"
                         className="absolute top-0 left-0 w-full h-full"
                         style={{ border: 0 }}
                         allowFullScreen
@@ -346,8 +346,8 @@ const LastoursPadel: React.FC = () => {
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "43.3356",
-            "longitude": "2.3785"
+            "latitude": "43.0466928",
+            "longitude": "2.900298"
           },
           "url": "https://villagepadel.fr/lastours",
           "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a",
