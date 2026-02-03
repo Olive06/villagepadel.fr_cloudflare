@@ -21,6 +21,7 @@ import PromoBar from './components/PromoBar';
 import VPTechPage from './pages/VPTechPage';
 import RedirectPage from './pages/RedirectPage';
 import ChisPadel from './pages/ChisPadel';
+import LastoursPadel from './pages/LastoursPadel';
 import ArenaBooking from './pages/ArenaBooking';
 
 // ScrollToTop
@@ -75,6 +76,7 @@ const App: React.FC = () => {
             <Route path="/port-la-nouvelle" element={<PortLaNouvellePadel />} />
             <Route path="/chis" element={<ChisPadel />} />
             <Route path="/tc-muret" element={<TCMuretPadel />} />
+            <Route path="/lastours" element={<LastoursPadel />} />
             <Route path="/demande-devis" element={<QuoteRequest />} />
             <Route path="/application" element={<AppFeatures />} />
             <Route path="/cgu" element={<CGU />} />

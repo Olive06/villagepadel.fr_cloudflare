@@ -82,6 +82,15 @@ const terrains = [
     image: "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc",
     link: "/tc-muret",
   },
+  {
+    id: "lastours",
+    name: "Château de Lastours",
+    position: [43.3356, 2.3785],
+    address: "11600 Lastours, Aude",
+    courts: 1,
+    image: "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a",
+    link: "/lastours",
+  },
 ];
 
 const NosPadels = () => {
