@@ -114,7 +114,7 @@ const NosPadels = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
         <p className="text-sm text-gray-500 mb-2">
-          {filteredTerrains.length} terrains trouvés
+          {filteredTerrains.reduce((total, terrain) => total + terrain.courts, 0)} terrains trouvés
         </p>
 
         {filteredTerrains.map((terrain) => (
