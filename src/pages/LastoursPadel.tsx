@@ -22,7 +22,7 @@ const LastoursPadel: React.FC = () => {
         />
         <meta
           name="keywords"
-          content="padel Lastours, padel château, padel Aude, padel 11, padel Carcassonne, réservation padel, padel cadre exceptionnel, Village Padel, matériel gratuit"
+          content="padel Lastours, padel château, padel Aude, padel 11, padel Narbonne, réservation padel, padel cadre exceptionnel, Village Padel, matériel gratuit"
         />
         <meta property="og:title" content="Padel au Château de Lastours - Cadre d'Exception | Village Padel" />
         <meta
@@ -234,7 +234,7 @@ const LastoursPadel: React.FC = () => {
             {/* Contact Information */}
             <div className="text-gray-700 space-y-2">
               <p><strong>Adresse :</strong> Château de Lastours, 11600 Lastours, Aude, France</p>
-              <p><strong>Région :</strong> Proche de Carcassonne</p>
+              <p><strong>Région :</strong> Proche de Narbonne</p>
             </div>
           </div>
         </div>
@@ -297,9 +297,9 @@ const LastoursPadel: React.FC = () => {
                   Grande nouveauté : la <strong>location de matériel est offerte</strong> ! Raquettes et balles sont à votre disposition gratuitement sur place. Venez les mains dans les poches et profitez pleinement de votre session.
                 </p>
 
-                <h3>Proche de Carcassonne</h3>
+                <h3>Proche de Narbonne</h3>
                 <p>
-                  Le village de Lastours est situé à proximité de Carcassonne, dans l'Aude (11). Ce cadre exceptionnel offre une expérience de padel unique, alliant sport et découverte d'un patrimoine remarquable.
+                  Le village de Lastours est situé à proximité de Narbonne, dans l'Aude (11). Ce cadre exceptionnel offre une expérience de padel unique, alliant sport et découverte d'un patrimoine remarquable.
                 </p>
 
                 <div className="bg-green-50 p-4 rounded-lg mt-6">
@@ -321,7 +321,7 @@ const LastoursPadel: React.FC = () => {
                     <li><strong>Matériel offert</strong> - Raquettes et balles gratuites</li>
                     <li><strong>24€ pour 1h30</strong> - Tarif attractif tout inclus</li>
                     <li><strong>100% autonome</strong> - Aucune contrainte horaire</li>
-                    <li><strong>Proche de Carcassonne</strong> - Facilement accessible</li>
+                    <li><strong>Proche de Narbonne</strong> - Facilement accessible</li>
                   </ul>
                 </div>
               </div>
