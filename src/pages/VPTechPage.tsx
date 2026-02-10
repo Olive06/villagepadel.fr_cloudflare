@@ -8,20 +8,20 @@ const VPTechPage = () => {
     <div className="min-h-screen">
       {/* SEO Meta Tags - OPTIMISÉ */}
       <Helmet>
-        <title>Automatisation Terrain Padel | Logiciel Gestion Club Padel | VP Tech</title>
+        <title>Automatisation Terrain Padel | Padel Autonome & Application Réservation | VP Tech</title>
         <meta
           name="description"
-          content="VP Tech : solution d'automatisation terrain de padel. Logiciel de gestion club padel avec réservation en ligne, accès autonome par smartphone, éclairage intelligent. Alternative moderne aux systèmes traditionnels."
+          content="VP Tech : solution d'automatisation terrain de padel et padel autonome. Application de réservation padel en ligne, accès autonome par smartphone, éclairage intelligent. L'app padel tout-en-un pour clubs et joueurs."
         />
         <meta
           name="keywords"
-          content="automatisation padel, terrain padel autonome, logiciel gestion padel, réservation padel en ligne, accès automatique padel, système réservation padel, gestion club padel, padel automatisé, VP Tech, Village Padel, logiciel club tennis padel, solution digitale padel, padel connecté, casier matériel padel, éclairage automatique padel"
+          content="padel autonome, application réservation padel, réserver padel en ligne, app padel, application padel mobile, terrain padel autonome, automatisation padel, logiciel gestion padel, réservation padel en ligne, accès automatique padel, système réservation padel, gestion club padel, padel automatisé, VP Tech, Village Padel, logiciel club tennis padel, solution digitale padel, padel connecté, casier matériel padel, éclairage automatique padel, réservation terrain padel smartphone, club padel sans personnel, padel 24h/24"
         />
         {/* Open Graph */}
-        <meta property="og:title" content="VP Tech - Automatisation & Gestion Club Padel" />
+        <meta property="og:title" content="VP Tech - Automatisation Padel, Padel Autonome & App Réservation" />
         <meta
           property="og:description"
-          content="Solution complète d'automatisation pour clubs de padel : réservation en ligne, accès autonome, éclairage intelligent, gestion simplifiée."
+          content="Application de réservation padel et solution de padel autonome : réservez en ligne, accédez au terrain par smartphone, éclairage automatique. La solution tout-en-un pour clubs de padel."
         />
         <meta
           property="og:image"
@@ -31,10 +31,10 @@ const VPTechPage = () => {
         <meta property="og:type" content="website" />
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="VP Tech - Automatisation Terrain Padel" />
+        <meta name="twitter:title" content="VP Tech - Automatisation Padel & Application Réservation Padel" />
         <meta
           name="twitter:description"
-          content="Logiciel de gestion et automatisation pour clubs de padel. Réservation, accès autonome, éclairage intelligent."
+          content="Application de réservation padel en ligne et solution de padel autonome. Réservez, accédez et jouez sans personnel sur site."
         />
         <meta
           name="twitter:image"
@@ -58,13 +58,13 @@ const VPTechPage = () => {
         {/* Contenu texte */}
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-            <span className="text-brand-orange">VP Tech</span> : Automatisez votre padel
+            <span className="text-brand-orange">VP Tech</span> : Automatisez votre padel autonome
           </h1>
           <p className="text-xl md:text-2xl mb-4 drop-shadow-md">
-            Réservation en ligne, accès autonome, matériel connecté
+            Application de réservation padel, accès autonome par smartphone, automatisation complète
           </p>
           <p className="text-lg text-gray-200 mb-8 drop-shadow-md">
-            La solution tout-en-un qui révolutionne la gestion des clubs de padel en France
+            La solution tout-en-un pour gérer votre club de padel sans personnel sur site
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -112,10 +112,10 @@ const VPTechPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Logiciel de gestion et automatisation pour club de padel
+              Automatisation et application de réservation pour club de padel autonome
             </h2>
             <p className="text-lg text-gray-600">
-              VP Tech intègre toutes les fonctionnalités nécessaires pour rendre votre club autonome et optimiser son rendement
+              VP Tech automatise votre club et le rend autonome : app de réservation padel en ligne, accès smartphone, éclairage automatique et gestion sans personnel
             </p>
           </div>
 
@@ -194,10 +194,10 @@ const VPTechPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Comment fonctionne l'automatisation VP Tech ?
+              Comment fonctionne le padel autonome VP Tech ?
             </h2>
             <p className="text-lg text-gray-600">
-              Une solution complète et intégrée pour une expérience fluide, du joueur au gestionnaire
+              Réservez via l'application, accédez au terrain par smartphone, jouez : le padel autonome simplifié
             </p>
           </div>
 
@@ -567,10 +567,10 @@ const VPTechPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Questions fréquentes sur l'automatisation padel
+              Questions fréquentes sur le padel autonome et l'application de réservation
             </h2>
             <p className="text-lg text-gray-600">
-              Tout ce que vous devez savoir sur notre solution d'automatisation
+              Tout ce que vous devez savoir sur notre solution de padel autonome et notre app de réservation
             </p>
           </div>
 
@@ -791,20 +791,20 @@ ${name || 'Prospect'}`);
         <div className="container mx-auto px-4 max-w-4xl">
           <details className="bg-gray-50 rounded-xl shadow-md p-6">
             <summary className="cursor-pointer text-xl font-semibold text-brand-blue mb-4">
-              Plus d'infos sur l'automatisation des clubs de padel
+              Plus d'infos sur le padel autonome et l'application de réservation padel
             </summary>
             <div className="prose prose-lg max-w-none mt-4 text-gray-700">
-              <h2>Solution d'automatisation terrain de padel - VP Tech par Village Padel</h2>
+              <h2>Padel autonome et application de réservation padel - VP Tech par Village Padel</h2>
               <p>
-                Village Padel propose <strong>VP Tech</strong>, la solution d'<strong>automatisation complète pour terrains de padel</strong> qui révolutionne la gestion et l'expérience des joueurs. Notre technologie tout-en-un intègre <strong>réservation en ligne</strong>, <strong>contrôle d'accès autonome</strong>, gestion de l'<strong>éclairage intelligent</strong> et <strong>location de matériel automatisée</strong> dans une interface centralisée.
+                Village Padel propose <strong>VP Tech</strong>, la solution de <strong>padel autonome</strong> et d'<strong>application de réservation padel</strong> qui révolutionne la gestion et l'expérience des joueurs. Notre technologie tout-en-un intègre une <strong>app de réservation padel en ligne</strong>, un <strong>contrôle d'accès autonome par smartphone</strong>, la gestion de l'<strong>éclairage intelligent</strong> et la <strong>location de matériel automatisée</strong> dans une interface centralisée.
               </p>
-              
-              <h3>Logiciel de gestion club padel : une alternative moderne</h3>
+
+              <h3>Application de réservation padel : une alternative moderne aux logiciels traditionnels</h3>
               <p>
-                Face à l'explosion du padel en France, les clubs recherchent des solutions efficaces pour gérer leurs terrains. VP Tech se positionne comme une <strong>alternative moderne aux logiciels traditionnels</strong> de gestion de clubs sportifs. Contrairement aux solutions génériques, notre système est spécifiquement conçu pour le padel avec des fonctionnalités adaptées : créneaux de 1h30, gestion multi-terrains, partage de frais entre joueurs, etc.
+                Face à l'explosion du padel en France, les clubs recherchent des <strong>applications de réservation padel</strong> efficaces pour gérer leurs terrains. VP Tech se positionne comme une <strong>alternative moderne aux logiciels traditionnels</strong> de gestion de clubs sportifs. Contrairement aux solutions génériques, notre <strong>app padel</strong> est spécifiquement conçue pour le padel avec des fonctionnalités adaptées : créneaux de 1h30, gestion multi-terrains, partage de frais entre joueurs, etc.
               </p>
-              
-              <h3>Terrain de padel autonome : comment ça marche ?</h3>
+
+              <h3>Padel autonome : comment ça marche ?</h3>
               <p>
                 Un <strong>terrain de padel autonome</strong> fonctionne sans présence humaine permanente. Grâce à VP Tech, les joueurs réservent en ligne, paient via l'application, puis accèdent au terrain à l'heure prévue en déverrouillant la porte avec leur smartphone. L'éclairage s'active automatiquement et le matériel (raquettes, balles) peut être récupéré dans des casiers connectés. Cette automatisation permet aux clubs de :
               </p>
@@ -820,9 +820,9 @@ ${name || 'Prospect'}`);
                 VP Tech s'intègre avec les plateformes populaires comme <strong>Neop</strong> et <strong>Spartime</strong>, permettant aux clubs d'améliorer leurs systèmes existants. Pour les clubs utilisant d'autres solutions de <strong>gestion de réservation sportive</strong>, nous proposons notre propre système complet ou étudions les possibilités d'intégration personnalisée.
               </p>
               
-              <h3>Système de réservation padel en ligne</h3>
+              <h3>Application de réservation padel en ligne : réserver un terrain en quelques clics</h3>
               <p>
-                Notre <strong>application mobile de réservation padel</strong> offre une expérience utilisateur optimale : visualisation des disponibilités en temps réel, paiement sécurisé, invitation de partenaires, historique des matchs, et accès direct aux terrains. Les joueurs adorent la simplicité et l'autonomie que cela leur procure.
+                Notre <strong>application de réservation padel</strong> offre une expérience utilisateur optimale : visualisation des disponibilités en temps réel, paiement sécurisé, invitation de partenaires, historique des matchs, et accès direct aux terrains. Disponible sur iOS et Android, l'<strong>app padel Village Padel</strong> permet de <strong>réserver un terrain de padel</strong> en moins d'une minute. Les joueurs adorent la simplicité et l'autonomie que cela leur procure.
               </p>
               
               <h3>Automatisation éclairage et accès terrain padel</h3>
@@ -851,34 +851,34 @@ ${name || 'Prospect'}`);
               </p>
               
               <p>
-                Rejoignez les clubs innovants qui ont déjà adopté VP Tech et constaté une augmentation moyenne de 30% de leurs revenus. Notre solution d'<strong>automatisation de padel</strong> représente l'avenir de ce sport en pleine expansion en France.
+                Rejoignez les clubs innovants qui ont déjà adopté VP Tech et constaté une augmentation moyenne de 30% de leurs revenus. Notre solution de <strong>padel autonome</strong> avec <strong>application de réservation padel</strong> intégrée représente l'avenir de ce sport en pleine expansion en France. Que vous cherchiez une <strong>app pour réserver un padel</strong>, un système de <strong>terrain padel autonome 24h/24</strong> ou une solution complète de gestion de club, VP Tech répond à tous vos besoins.
               </p>
             </div>
           </details>
         </div>
       </section>
 
-      {/* Schema.org JSON-LD */}
+      {/* Schema.org JSON-LD - SoftwareApplication */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "VP Tech - Solution d'automatisation padel",
-          "applicationCategory": "BusinessApplication",
+          "name": "Village Padel - Application de réservation padel et padel autonome",
+          "applicationCategory": "SportsApplication",
           "operatingSystem": "iOS, Android, Web",
-          "description": "Logiciel de gestion et automatisation pour clubs de padel : réservation en ligne, accès autonome, éclairage intelligent, location matériel automatisée.",
+          "description": "Application de réservation padel en ligne et solution de padel autonome. Réservez votre terrain, accédez par smartphone, jouez sans personnel sur site. La solution tout-en-un pour clubs de padel.",
           "offers": [
             {
               "@type": "Offer",
               "name": "Intégration App",
               "price": "0",
               "priceCurrency": "EUR",
-              "description": "Intégration gratuite avec Neop et Spartime"
+              "description": "Intégration gratuite de l'application de réservation padel avec Neop et Spartime"
             },
             {
               "@type": "Offer",
-              "name": "VP Tech Complet",
-              "description": "Solution tout-en-un avec formation - Sur devis"
+              "name": "VP Tech Complet - Padel Autonome",
+              "description": "Solution padel autonome tout-en-un : application de réservation, accès smartphone, éclairage automatique - Sur devis"
             }
           ],
           "provider": {
@@ -889,13 +889,72 @@ ${name || 'Prospect'}`);
             "email": "contact@villagepadel.fr"
           },
           "featureList": [
-            "Réservation en ligne",
-            "Accès autonome par smartphone",
+            "Application de réservation padel en ligne",
+            "Padel autonome - accès par smartphone",
             "Éclairage intelligent automatisé",
             "Casiers connectés pour location matériel",
             "Tableau de bord administrateur",
             "Marketing IA intégré",
-            "Support technique 7j/7"
+            "Support technique 7j/7",
+            "Terrain padel 24h/24 sans personnel"
+          ]
+        })}
+      </script>
+
+      {/* Schema.org JSON-LD - FAQPage pour rich snippets Google */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Combien de temps prend l'installation de VP Tech ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'installation complète de notre solution de padel autonome sur un terrain prend généralement entre 1 et 2 jours ouvrables, selon la configuration de votre club. Notre équipe technique s'occupe de tout pour minimiser les perturbations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Est-ce que VP Tech est compatible avec mon installation électrique actuelle ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, VP Tech est conçu pour s'intégrer facilement avec la plupart des installations électriques existantes. Nous effectuons une évaluation préalable pour garantir une compatibilité optimale et proposons des solutions adaptées si nécessaire."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment les joueurs accèdent-ils au terrain avec un système de padel autonome ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les joueurs utilisent simplement l'application Village Padel sur leur smartphone. À l'heure de leur réservation, un bouton d'accès s'active dans l'application. En appuyant sur ce bouton, la porte du terrain se déverrouille automatiquement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Que se passe-t-il en cas de panne de courant ou de connexion internet ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Notre système est conçu avec des dispositifs de secours. En cas de panne de courant, un système de batterie de secours maintient les fonctions essentielles. Pour les problèmes de connexion internet, un mode hors ligne permet aux administrateurs d'accéder manuellement aux installations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "VP Tech est-il compatible avec Gestion Sports, Doinsport ou d'autres logiciels de réservation padel ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VP Tech s'intègre actuellement avec Neop et Spartime. Pour les clubs utilisant d'autres solutions comme Gestion Sports ou Doinsport, nous proposons notre propre application de réservation padel complète ou étudions les possibilités d'intégration au cas par cas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Proposez-vous un service d'assistance technique ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolument ! Nous offrons un support technique dédié 7j/7 pour répondre à toutes vos questions et résoudre rapidement tout problème éventuel. La maintenance à distance est incluse dans notre service."
+              }
+            }
           ]
         })}
       </script>
