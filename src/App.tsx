@@ -25,6 +25,7 @@ import LastoursPadel from './pages/LastoursPadel';
 import ArenaBooking from './pages/ArenaBooking';
 import BookingSuccess from './pages/BookingSuccess';
 import BookingCancel from './pages/BookingCancel';
+import CancelBooking from './pages/CancelBooking';
 
 // ScrollToTop
 const ScrollToTop = () => {
@@ -90,6 +91,7 @@ const App: React.FC = () => {
             <Route path="/arena/:bookingId" element={<ArenaBooking />} />
             <Route path="/booking-success" element={<BookingSuccess />} />
             <Route path="/booking-cancel" element={<BookingCancel />} />
+            <Route path="/cancel-booking" element={<CancelBooking />} />
             <Route path="*" element={<HomePage />} />  {/* ← 404 FALLBACK */}
           </Routes>
         </main>
