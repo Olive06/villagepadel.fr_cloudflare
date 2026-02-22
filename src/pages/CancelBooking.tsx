@@ -172,7 +172,8 @@ const CancelBooking: React.FC = () => {
 
             <button
               onClick={handleCancel}
-              className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors mb-3"
+              disabled={state !== 'details'}
+              className="w-full bg-red-500 hover:bg-red-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold px-6 py-3 rounded-lg transition-colors mb-3"
             >
               Confirmer l'annulation
             </button>
