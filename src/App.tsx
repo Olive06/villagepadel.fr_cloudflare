@@ -23,6 +23,8 @@ import RedirectPage from './pages/RedirectPage';
 import ChisPadel from './pages/ChisPadel';
 import LastoursPadel from './pages/LastoursPadel';
 import ArenaBooking from './pages/ArenaBooking';
+import BookingSuccess from './pages/BookingSuccess';
+import BookingCancel from './pages/BookingCancel';
 
 // ScrollToTop
 const ScrollToTop = () => {
@@ -86,6 +88,8 @@ const App: React.FC = () => {
             <Route path="/ConfirmationReservation" element={<ReservationConfirmation />} />
             <Route path="/redirect" element={<RedirectPage />} />
             <Route path="/arena/:bookingId" element={<ArenaBooking />} />
+            <Route path="/booking-success" element={<BookingSuccess />} />
+            <Route path="/booking-cancel" element={<BookingCancel />} />
             <Route path="*" element={<HomePage />} />  {/* ← 404 FALLBACK */}
           </Routes>
         </main>
