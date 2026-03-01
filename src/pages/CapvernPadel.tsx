@@ -1,44 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
 
 const CapvernPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées (65)</title>
-        <meta
-          name="description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€ (raquettes + balles). Réservez en ligne avec Village Padel !"
-        />
-        <meta
-          name="keywords"
-          content="CAP'PADEL CAPVERN, padel Capvern, padel Hautes-Pyrénées, padel 65, padel Capvern-les-Bains, réservation padel, padel autonome, Village Padel"
-        />
-        <meta property="og:title" content="CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées" />
-        <meta
-          property="og:description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€. Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2Fcapvern_app.webp?alt=media&token=a7a7161c-c88f-4ca5-b763-0f873cca00ef"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/capvern" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="CAP'PADEL CAPVERN - Terrain 100% Autonome | Hautes-Pyrénées" />
-        <meta
-          name="twitter:description"
-          content="CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65). 6€/personne, matériel 4€. Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/capvern" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -333,48 +299,6 @@ const CapvernPadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "CAP'PADEL CAPVERN - Terrain 100% Autonome",
-          "description": "CAP'PADEL CAPVERN - Terrain de padel 100% autonome à Capvern (65), Hautes-Pyrénées. 6€/personne, matériel 4€. Accès automatisé via smartphone.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Capvern",
-            "addressRegion": "Hautes-Pyrénées",
-            "postalCode": "65130",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.097394",
-            "longitude": "0.329371"
-          },
-          "url": "https://villagepadel.fr/capvern",
-          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FCapvern.webp?alt=media&token=325155a7-6dd0-40c4-bb04-86d4ba7ea3f4",
-          "priceRange": "6€ par personne",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
-              "name": "Location matériel 4€"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Terrain outdoor"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Parking disponible"
-            }
-          ]
-        })}
-      </script>
     </div>
   );
 };

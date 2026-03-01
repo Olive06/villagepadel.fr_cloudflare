@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Sparkles, Smartphone, Trees, Download } from 'lucide-react';
 import ImageCarousel from '../components/ImageCarousel';
 
@@ -13,40 +12,7 @@ const LastoursImages = [
 const LastoursPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel au Château de Lastours - Cadre d'Exception | Village Padel</title>
-        <meta
-          name="description"
-          content="Terrain de padel dans un cadre d'exception au Château de Lastours (11), Aude. 24€ pour 1h30, location de matériel offerte sur place. Réservez en ligne !"
-        />
-        <meta
-          name="keywords"
-          content="padel Lastours, padel château, padel Aude, padel 11, padel Narbonne, réservation padel, padel cadre exceptionnel, Village Padel, matériel gratuit"
-        />
-        <meta property="og:title" content="Padel au Château de Lastours - Cadre d'Exception | Village Padel" />
-        <meta
-          property="og:description"
-          content="Terrain de padel dans un cadre d'exception au Château de Lastours (11), Aude. 24€ pour 1h30, location de matériel offerte sur place. Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/lastours" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel au Château de Lastours - Cadre d'Exception | Village Padel" />
-        <meta
-          name="twitter:description"
-          content="Terrain de padel dans un cadre d'exception au Château de Lastours (11), Aude. 24€ pour 1h30, location de matériel offerte sur place. Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/lastours" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white py-16">
@@ -330,48 +296,6 @@ const LastoursPadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel - Château de Lastours",
-          "description": "Terrain de padel dans un cadre d'exception à Lastours (11), Aude. 24€ pour 1h30, location de matériel offerte sur place. Accès automatisé via smartphone.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Lastours",
-            "addressRegion": "Aude",
-            "postalCode": "11600",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.0466928",
-            "longitude": "2.900298"
-          },
-          "url": "https://villagepadel.fr/lastours",
-          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FLastours.jpg?alt=media&token=f0494ccb-96f1-47b6-87a0-aa0a2e06db9a",
-          "priceRange": "24€ pour 1h30",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Location de matériel offerte"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Cadre historique exceptionnel"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Stationnement disponible"
-            }
-          ]
-        })}
-      </script>
     </div>
   );
 };

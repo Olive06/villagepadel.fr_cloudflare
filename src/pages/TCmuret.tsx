@@ -1,44 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download, Clock, Car } from 'lucide-react';
 
 const TCMuretPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>TC MURET - Terrain de Padel | Haute-Garonne (31) | Village Padel</title>
-        <meta
-          name="description"
-          content="TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31). À partir de 8€/personne, location matériel 4€ (raquettes + balles). Réservez en ligne avec Village Padel !"
-        />
-        <meta
-          name="keywords"
-          content="TC Muret, padel Muret, padel Haute-Garonne, padel 31, Tennis Club Muret, réservation padel, padel sud Toulouse, Village Padel, Complexe Nelson Paillou"
-        />
-        <meta property="og:title" content="TC MURET - Terrain de Padel | Haute-Garonne (31)" />
-        <meta
-          property="og:description"
-          content="TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31). À partir de 8€/personne, location matériel 4€. Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/tc-muret" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TC MURET - Terrain de Padel | Haute-Garonne (31)" />
-        <meta
-          name="twitter:description"
-          content="TC MURET - Terrain de padel à Muret (31). À partir de 8€/personne, matériel 4€. Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/tc-muret" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker (meta tags + JSON-LD + body content) */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -337,52 +303,6 @@ const TCMuretPadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "TC MURET - Tennis Club de Muret",
-          "description": "TC MURET - Terrain de padel au Complexe Nelson Paillou à Muret (31), Haute-Garonne. À partir de 8€/personne, matériel 4€. Réservation via Village Padel.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Complexe Nelson Paillou, Avenue Bernard IV",
-            "addressLocality": "Muret",
-            "addressRegion": "Haute-Garonne",
-            "postalCode": "31600",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.472792",
-            "longitude": "1.338952"
-          },
-          "url": "https://villagepadel.fr/tc-muret",
-          "image": "https://firebasestorage.googleapis.com/v0/b/padeldupeuple.appspot.com/o/Terrains_images%2FPHOTO-2025-12-23-18-27-50.jpg?alt=media&token=b3f0813c-8d56-40f2-b710-7a6dcd9b5cfc",
-          "priceRange": "À partir de 8€ par personne",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Location matériel 4€"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Parking gratuit"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Complexe sportif moderne"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Réservation en ligne"
-            }
-          ],
-          "sameAs": [
-            "https://maps.app.goo.gl/WQrt6tmZXkwonZc48"
-          ]
-        })}
-      </script>
     </div>
   );
 };

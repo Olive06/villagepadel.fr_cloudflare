@@ -1,44 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Users, Coffee, Shirt, Download } from 'lucide-react';
 
 const ChisPadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées (65)</title>
-        <meta
-          name="description"
-          content="Terrain de padel extérieur à Chis (65), Hautes-Pyrénées. 20€ jour / 24€ soirée. Club house, vestiaires, bar, location raquettes 2€. Réservez en ligne !"
-        />
-        <meta
-          name="keywords"
-          content="padel Chis, padel Hautes-Pyrénées, padel 65, Tennis Club Pyrénées Bigorre, réservation padel, padel Tarbes, padel Lourdes, Village Padel"
-        />
-        <meta property="og:title" content="Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées" />
-        <meta
-          property="og:description"
-          content="Terrain de padel extérieur à Chis (65). 20€ jour / 24€ soirée. Club house, vestiaires, bar. Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/bigorre.jpg"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/chis" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Chis - Tennis Club Pyrénées Bigorre | Hautes-Pyrénées" />
-        <meta
-          name="twitter:description"
-          content="Terrain de padel extérieur à Chis (65). 20€ jour / 24€ soirée. Club house, vestiaires, bar. Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/bigorre.jpg"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/chis" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -346,62 +312,6 @@ const ChisPadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Tennis Club Pyrénées Bigorre - Terrain de Padel à Chis",
-          "description": "Terrain de padel extérieur à Chis (65800), Hautes-Pyrénées. 20€ journée, 24€ soirée. Club house, vestiaires, bar, location raquettes 2€.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Chis",
-            "addressRegion": "Hautes-Pyrénées",
-            "postalCode": "65800",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.2937",
-            "longitude": "0.121392"
-          },
-          "url": "https://villagepadel.fr/chis",
-          "image": "https://olive06.github.io/villagepadel.fr/images/bigorre.jpg",
-          "priceRange": "20€ jour / 24€ soirée pour 1h30",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Terrain de padel extérieur"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
-              "name": "Location raquettes 2€ pièce"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Vestiaires avec douches"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Club house avec bar"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Vente balles neuves"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Parking gratuit"
-            }
-          ],
-          "parentOrganization": {
-            "@type": "SportsOrganization",
-            "name": "Tennis Club Pyrénées Bigorre",
-            "location": "Chis, Hautes-Pyrénées",
-            "description": "Club multi-sports avec tennis, padel, beach tennis et pétanque"
-          }
-        })}
-      </script>
     </div>
   );
 };

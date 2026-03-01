@@ -1,47 +1,11 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Smartphone, Key, Sun, Package, Zap, BarChart, Shield, Database, CreditCard, Users, Clock, Mail, Phone, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const VPTechPage = () => {
   return (
     <div className="min-h-screen">
-      {/* SEO Meta Tags - OPTIMISÉ */}
-      <Helmet>
-        <title>Automatisation Terrain Padel | Padel Autonome & Application Réservation | VP Tech</title>
-        <meta
-          name="description"
-          content="VP Tech : solution d'automatisation terrain de padel et padel autonome. Application de réservation padel en ligne, accès autonome par smartphone, éclairage intelligent. L'app padel tout-en-un pour clubs et joueurs."
-        />
-        <meta
-          name="keywords"
-          content="padel autonome, application réservation padel, réserver padel en ligne, app padel, application padel mobile, terrain padel autonome, automatisation padel, logiciel gestion padel, réservation padel en ligne, accès automatique padel, système réservation padel, gestion club padel, padel automatisé, VP Tech, Village Padel, logiciel club tennis padel, solution digitale padel, padel connecté, casier matériel padel, éclairage automatique padel, réservation terrain padel smartphone, club padel sans personnel, padel 24h/24"
-        />
-        {/* Open Graph */}
-        <meta property="og:title" content="VP Tech - Automatisation Padel, Padel Autonome & App Réservation" />
-        <meta
-          property="og:description"
-          content="Application de réservation padel et solution de padel autonome : réservez en ligne, accédez au terrain par smartphone, éclairage automatique. La solution tout-en-un pour clubs de padel."
-        />
-        <meta
-          property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/autonom_hero.jpg"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/vp-tech" />
-        <meta property="og:type" content="website" />
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="VP Tech - Automatisation Padel & Application Réservation Padel" />
-        <meta
-          name="twitter:description"
-          content="Application de réservation padel en ligne et solution de padel autonome. Réservez, accédez et jouez sans personnel sur site."
-        />
-        <meta
-          name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/autonom_hero.jpg"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/vp-tech" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">

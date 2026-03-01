@@ -1,44 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
 
 const PortLaNouvellePadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois</title>
-        <meta
-          name="description"
-          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
-        />
-        <meta
-          name="keywords"
-          content="padel Port-La Nouvelle, padel Aude, padel 11, TC Nouvellois, réservation padel, padel autonome, matériel padel, Village Padel"
-        />
-        <meta property="og:title" content="Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois" />
-        <meta
-          property="og:description"
-          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/port2.png"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/port-la-nouvelle" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Port-La Nouvelle - 2 Terrains 100% Autonomes | TC Nouvellois" />
-        <meta
-          name="twitter:description"
-          content="2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. TC Nouvellois - Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/port2.png"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/port-la-nouvelle" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -347,52 +313,6 @@ const PortLaNouvellePadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Terrains de Padel 100% Autonomes - TC Nouvellois Port-La Nouvelle",
-          "description": "2 terrains de padel 100% autonomes à Port-La Nouvelle (11), Aude. Matériel disponible, 24€ pour 1h30. Accès automatisé via smartphone.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Port-La Nouvelle",
-            "addressRegion": "Aude",
-            "postalCode": "11210",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.0146315",
-            "longitude": "3.0509743"
-          },
-          "url": "https://villagepadel.fr/port-la-nouvelle",
-          "image": "https://olive06.github.io/villagepadel.fr/images/port2.png",
-          "priceRange": "24€ pour 1h30",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
-              "name": "Matériel disponible via application"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "2 terrains de padel"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Stationnement disponible"
-            }
-          ],
-          "parentOrganization": {
-            "@type": "SportsOrganization",
-            "name": "TC Nouvellois"
-          }
-        })}
-      </script>
     </div>
   );
 };

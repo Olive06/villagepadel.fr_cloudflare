@@ -1,44 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { MapPin, Users, Smartphone, Award, Download } from 'lucide-react';
 
 const BaraquevillePadel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville</title>
-        <meta
-          name="description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
-        />
-        <meta
-          name="keywords"
-          content="padel Baraqueville, padel Aveyron, padel 12, Tennis Padel Club de Baraqueville, réservation padel, padel autonome, casier matériel, Village Padel"
-        />
-        <meta property="og:title" content="Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville" />
-        <meta
-          property="og:description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://olive06.github.io/villagepadel.fr/images/baraq1.jpg"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/baraqueville" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Baraqueville - Terrain 100% Autonome | Tennis Padel Club de Baraqueville" />
-        <meta
-          name="twitter:description"
-          content="Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Tennis Padel Club de Baraqueville - Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://olive06.github.io/villagepadel.fr/images/baraq1.jpg"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/baraqueville" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -349,61 +315,6 @@ const BaraquevillePadel: React.FC = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel 100% Autonome - Tennis Padel Club de Baraqueville",
-          "description": "Terrain de padel 100% autonome à Baraqueville (12), Aveyron. Casier matériel 4€, 20€ jour / 24€ soirée. Accès automatisé via smartphone.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Baraqueville",
-            "addressRegion": "Aveyron",
-            "postalCode": "12160",
-            "addressCountry": "FR",
-            "streetAddress": "Rue de la Vall. du Viaur"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "44.2751913",
-            "longitude": "2.4349727"
-          },
-          "telephone": "+33684197198",
-          "email": "tcbaraqueville@fft.fr",
-          "url": "https://villagepadel.fr/baraqueville",
-          "image": "https://olive06.github.io/villagepadel.fr/images/baraq1.jpg",
-          "priceRange": "20€ jour / 24€ soirée pour 1h30",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
-              "name": "Casier matériel sécurisé 4€"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Terrain outdoor avec éclairage LED"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Tarifs jour/soirée différenciés"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Parking gratuit"
-            }
-          ],
-          "parentOrganization": {
-            "@type": "SportsOrganization",
-            "name": "Tennis Padel Club de Baraqueville",
-            "foundingDate": "1980",
-            "memberOf": "Fédération Française de Tennis"
-          }
-        })}
-      </script>
     </div>
   );
 };

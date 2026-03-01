@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import WeatherWidget from '../components/GrisollesPadel/WeatherWidget';
 import CourtInfo from '../components/GrisollesPadel/CourtInfo';
 import Features from '../components/GrisollesPadel/Features';
@@ -10,40 +9,7 @@ import WhatsAppCommunity from '../components/GrisollesPadel/WhatsAppCommunity';
 const GrisollesPadel = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel de Grisolles - Terrain Outdoor Premium | Village Padel</title>
-        <meta
-          name="description"
-          content="Découvrez notre terrain de padel outdoor à Grisolles (82). Réservation en ligne, accès 7j/7 de 8h à 22h, terrain premium. Rejoignez notre communauté WhatsApp."
-        />
-        <meta
-          name="keywords"
-          content="padel Grisolles, terrain padel 82, réservation padel Grisolles, padel outdoor, Village Padel"
-        />
-        <meta property="og:title" content="Padel de Grisolles - Village Padel" />
-        <meta
-          property="og:description"
-          content="Terrain de padel outdoor premium à Grisolles. Réservez en ligne et jouez 7j/7 de 8h à 22h."
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/grisolles" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel de Grisolles - Village Padel" />
-        <meta
-          name="twitter:description"
-          content="Terrain de padel outdoor premium à Grisolles. Réservez en ligne et jouez 7j/7 de 8h à 22h."
-        />
-        <meta
-          name="twitter:image"
-          content="https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/grisolles" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -185,31 +151,6 @@ const GrisollesPadel = () => {
         </section>
       </div>
       
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel de Grisolles - Village Padel",
-          "description": "Terrain de padel outdoor premium situé à Grisolles (82) avec communauté WhatsApp active",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Grisolles",
-            "addressRegion": "Tarn-et-Garonne",
-            "postalCode": "82170",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.8295",
-            "longitude": "1.2962"
-          },
-          "openingHours": "Mo-Su 08:00-22:00",
-          "telephone": "+33749157401",
-          "url": "https://villagepadel.fr/grisolles",
-          "image": "https://res.cloudinary.com/damfvriyn/image/upload/v1736010730/IMG_2452_s9pdqn_2e82be.jpg"
-        })}
-      </script>
     </div>
   );
 };

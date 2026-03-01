@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import WeatherWidget_campsas from '../components/CampsasPadel/WeatherWidget_campsas';
 import Features_campsas from '../components/CampsasPadel/Features_campsas';
 import BookingCTA_campsas from '../components/CampsasPadel/BookingCTA_campsas';
@@ -8,40 +7,7 @@ import LocationMap_campsas from '../components/CampsasPadel/LocationMap_campsas'
 const CampsasPadel = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais</title>
-        <meta
-          name="description"
-          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
-        />
-        <meta
-          name="keywords"
-          content="padel Campsas, padel autonome, padel Montauban, padel 82, Tennis Padel Avenir Campsanais, réservation padel, padel outdoor, Village Padel, accès automatisé"
-        />
-        <meta property="og:title" content="Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais" />
-        <meta
-          property="og:description"
-          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg"
-        />
-        <meta property="og:url" content="https://villagepadel.fr/campsas" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Padel à Campsas - Terrain 100% Autonome | Tennis Padel Avenir Campsanais" />
-        <meta
-          name="twitter:description"
-          content="Terrain de padel 100% autonome à Campsas (82), près de Montauban. Accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30. Réservez en ligne !"
-        />
-        <meta
-          name="twitter:image"
-          content="https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg"
-        />
-        <link rel="canonical" href="https://villagepadel.fr/campsas" />
-      </Helmet>
+      {/* SEO géré par le Cloudflare Worker */}
 
       {/* Hero Section avec image en background */}
       <div className="relative h-[70vh] min-h-[500px] flex items-center justify-center">
@@ -231,46 +197,6 @@ const CampsasPadel = () => {
         </section>
       </div>
 
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SportsActivityLocation",
-          "name": "Terrain de Padel 100% Autonome - Tennis Padel Avenir Campsanais",
-          "description": "Terrain de padel 100% autonome à Campsas (82), accès et matériel automatisés, ouvert 7j/7 de 9h à 22h, 24€ pour 1h30",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Campsas",
-            "addressRegion": "Tarn-et-Garonne",
-            "postalCode": "82370",
-            "addressCountry": "FR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.8591",
-            "longitude": "1.3734"
-          },
-          "openingHours": "Mo-Su 09:00-22:00",
-          "telephone": "+33749157401",
-          "url": "https://villagepadel.fr/campsas",
-          "image": "https://res.cloudinary.com/damfvriyn/image/upload/v1741114127/terrain_padel_campsas-1a737f3b706f4d6eb602b625a2032f2c_en03er.jpg",
-          "priceRange": "24€ pour 1h30",
-          "amenityFeature": [
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Accès autonome automatisé"
-            },
-            {
-              "@type": "LocationFeatureSpecification", 
-              "name": "Matériel disponible via application"
-            },
-            {
-              "@type": "LocationFeatureSpecification",
-              "name": "Terrain outdoor éclairé"
-            }
-          ]
-        })}
-      </script>
     </div>
   );
 };
